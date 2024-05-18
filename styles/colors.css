@@ -1,0 +1,22 @@
+:root {
+    /*PERHAPS ASSIGN COLORS, eg. --color-text: var(--color-grey-10);*/
+
+    /*basis of color palette*/
+    --color-primary: #FFFFF0;
+    --color-secondary: #353839;
+    --color-accent-1: #D5A086;
+    --color-accent-2: #9FC8C0;
+
+    /*text colors*/
+    --color-text-light: #FFFFF0;
+    --color-text-dark: #353839;
+    --color-text-grey: #878787;
+    --color-text-heading: #9FC8C0;
+
+    /*other colors*/
+    --color-urgent: #A33636;
+    --color-star: #FBF19B;
+
+    /*gradients*/
+    /*add later*/ 
+}
