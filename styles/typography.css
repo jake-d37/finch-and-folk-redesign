@@ -1,39 +1,64 @@
-/*use web font generator for this */
-@font-face {
-    font-family: '';
-    src: url();
-}
-
 :root{
-    --font-primary: sans-serif;
-    --font-display: sans-serif;
-    --text-base-size: 1.25em;
+    /*font variables*/
+    --font-primary: "Zen Old Mincho";
+    --font-display: "Qaligo";
 
-    --text-scale-ratio: 1.2;
-    --text-xs: calc(1rem / (var(--text-scale-ratio) * var(--text-scale-ratio)));
-    --text-sm: calc(1rem / var(--text-scale-ratio));
-    --text-md: calc(1rem * var(--text-scale-ratio));
-    --text-lg: calc(1rem * var(--text-scale-ratio) * var(--text-scale-ratio));
-    --text-xl: calc(1rem * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
-    --text-xxl: calc(1rem * var(--text-scale-ratio) * var(--text-scale-ratio) 
+    /*sizing*/
+    --text-base-size: 16pt;
+    --text-scale-ratio: 1.3;
+    --text-xs: calc(var(--text-base-size) / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+    --text-sm: calc(var(--text-base-size) / var(--text-scale-ratio));
+    --text-md: calc(var(--text-base-size) * var(--text-scale-ratio));
+    --text-lg: calc(var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xl: calc(var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xxl: calc(var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio) 
                                                     * var(--text-scale-ratio) * var(--text-scale-ratio));
-    --text-xxxl: calc(1rem * var(--text-scale-ratio) * var(--text-scale-ratio)
+    --text-xxxl: calc(var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio)
                                                     * var(--text-scale-ratio) * var(--text-scale-ratio) 
                                                     * var(--text-scale-ratio));
+
+    /*spacing*/
+    --baseline: 1em;
+    --space-sm: calc(var(--baseline) / 2);
+    --space-md: calc(var(--baseline));
+    --space-lg: calc(var(--baseline) * 2);
+    --space-xl: calc(var(--baseline) * 3);
+
+    /*line height*/
+    --base-line-height: 1em;
+    --heading-line-height: calc(var(--base-line-height) * 1.2);
+    --body-line-height: calc(var(var(--base-line-height)) * 1.4);
 }
 
-h1 {
+body {
+    color: var(--color-text-dark);
+    line-height: var(--body-line-height);
+}
+
+@media screen and (max-width: 390px){
+    :root{
+        --text-base-size: 16pt;
+        --baseline: 1em;
+    }
+}
+
+.heading {
+    font-family: var(--font-display), serif;
+}
+
+.page-heading {
+    /*size, color, spacing*/
+    display: block;
+    color: var(--color-accent-2);
     font-size: var(--text-xl);
 }
 
-p {
-    font-size: var(--text-md);
+.text-content {
+    color: var(--color-text-dark);
+    font-family: var(--font-primary);
 }
 
-@media screen and (min-width: 60em){
-    :root{
-        --text-base-size: 1em;
-    }
-    
+.page-description{
+    display: block;
+    font-size: var(--text-base-size)
 }
-

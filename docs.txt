@@ -1,0 +1,34 @@
+**COMPONENTS TO INCLUDE**
+
+- Page Header
+- Subheading 
+- F&F Logo
+- CTA Button
+- Category button (normal border, top right border, top left border)
+- Border Decoration
+- Scrolling Header
+- Icon button (eg. hamburger, filter, cart, favourites)
+- Navbar/Header
+    - Logo 2
+    - Searchbar
+- Product Card
+    - Add to cart shortcut
+    - Favourite Button
+    - Image
+    - Tags
+- Button (dark, invert)
+- Text field (dark, invert)
+- Recommended box 
+    - stars
+- Your Item box
+- Cart dropdown
+
+**PLAN**
+
+- Import fonts and get colors ready
+- Make Heading and Subheading in CSS (use BEM model)
+- Make CTA buttons in CSS
+- Make regular buttons in CSS
+- Make icon buttons in CSS (make icons in Figma and export)
+
+- Crawling titles

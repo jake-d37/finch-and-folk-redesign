@@ -2,3 +2,7 @@
 @import url("typography.css");
 @import url("spacing.css");
 @import url("layout.css");
+
+* {
+    background-color: var(--color-primary);
+}
