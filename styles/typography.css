@@ -16,6 +16,7 @@
     --text-xxxl: calc(var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio)
                                                     * var(--text-scale-ratio) * var(--text-scale-ratio) 
                                                     * var(--text-scale-ratio));
+    font-size: var(--text-base-size);
 
     /*spacing*/
     --baseline: 1em;
@@ -37,7 +38,7 @@ body {
 
 @media screen and (max-width: 390px){
     :root{
-        --text-base-size: 16pt;
+        --text-base-size: 12pt;
         --baseline: 1em;
     }
 }

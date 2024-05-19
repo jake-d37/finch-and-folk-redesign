@@ -2,7 +2,18 @@
 @import url("typography.css");
 @import url("spacing.css");
 @import url("layout.css");
+@import url("components.css");
 
 * {
     background-color: var(--color-primary);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
