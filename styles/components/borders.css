@@ -1,0 +1,38 @@
+.border {
+    /*border shouldn't show in fron of anything*/
+    z-index: 0;
+    /*width of border should be controlled*/
+    display: inline-block;
+    width: min(max(80vw,32rem), 40rem); 
+}
+
+.top-border {
+    /*flip the image vertically*/
+    transform: scaleY(-1);
+    /*nothing fits above*/
+    margin-top: 0%;
+    /*give room before content below*/
+    margin-bottom: 2.8rem;
+}
+
+.page-top-border{
+    /*leave room for the header*/
+    margin-top: 100px;
+}
+
+.bottom-border {
+    /*give room for content above*/
+    margin-top: 2.8rem;
+    /*no extra room below*/
+    margin-bottom: 0%;
+}
+
+.border-container {
+    display: flex;
+    /*there should be no room on the same horizontal plane as this*/
+    width:100%;
+    /* Center align the border */
+    justify-content: center; 
+    /* stops some wonky formatting when size gets bigger than viewport*/
+    overflow-x: hidden;
+}

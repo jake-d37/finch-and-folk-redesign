@@ -1,19 +1,25 @@
+/*import all other style sheets to link them to the page*/
 @import url("colors.css");
 @import url("typography.css");
 @import url("spacing.css");
 @import url("layout.css");
-@import url("components.css");
+@import url("/styles/components/components.css");
+
 
 * {
-    background-color: var(--color-primary);
+    /*to allow for things to be moved back*/
+    z-index: 1;
 }
 
 html {
+    background-color: var(--color-primary);
+    /*width and height includes padding and border*/
     box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
+    /*inherit the border-box sizing*/
     box-sizing: inherit;
 }

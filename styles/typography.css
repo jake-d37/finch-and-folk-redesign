@@ -16,9 +16,11 @@
     --text-xxxl: calc(var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio)
                                                     * var(--text-scale-ratio) * var(--text-scale-ratio) 
                                                     * var(--text-scale-ratio));
+    /*rems are based on font-size, which will be the base size*/
     font-size: var(--text-base-size);
 
     /*spacing*/
+    /*WORK OUT WHAT THIS IS FOR*/
     --baseline: 1em;
     --space-sm: calc(var(--baseline) / 2);
     --space-md: calc(var(--baseline));
@@ -37,12 +39,14 @@ body {
 }
 
 @media screen and (max-width: 390px){
+    /*makes sizes based on rem adapt*/
     :root{
         --text-base-size: 12pt;
         --baseline: 1em;
     }
 }
 
+/*text types*/
 .heading {
     font-family: var(--font-display), serif;
 }

@@ -1,10 +1,29 @@
 .btn {
+    /*anchors shouldn't have underlines*/
     text-decoration: none;
+    /*sizing and spacing*/
     padding: 0.75rem 2rem;
     border-radius: 2rem;
     font-size: 0.9rem;
     margin: 0.2em;
 }
+
+/*icon buttons*/
+.icon-button {
+    display: flex;
+}
+
+.favorite-icon {
+    height: 3rem;
+    width: 3rem;
+}
+
+.shop-icon {
+    height: 3.125rem;
+    width: 1.875rem;
+}
+
+/*cta buttons*/
 
 .cta-button {
     display: flex;
