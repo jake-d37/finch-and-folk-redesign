@@ -1,34 +1,57 @@
 .btn {
     /*anchors shouldn't have underlines*/
     text-decoration: none;
+    font-family: var(--font-primary);
+    font-weight: bolder;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /*default visual*/
+    border: 1px solid var(--color-text-light);
+    border-radius: 2pt;
+    background-color: var(--color-secondary);
+    color: var(--color-text-light);
+    font-size: 1rem;
+    padding: 0.5rem 3rem 0.7rem 3rem;
+}
+
+/*inverted color*/
+.invert-color {
+    border-color: var(--color-text-dark);
+    background-color: var(--color-primary);
+    color: var(--color-text-dark);
+}
+
+/*add hover, pressed, and focused states*/
+
+/*icon buttons*/
+.icon-button {
+    /*border: 0;*/
+    padding: 0;
+    justify-content: space-around;  /* Center align horizontally, if needed */
+    width: 2rem;
+    height: 2rem;
+}
+
+.favorite-icon { 
+    height: 2rem;
+    width: 2rem;
+}
+
+.shop-icon {
+    height: 2rem;
+    width: 2rem;
+}
+
+/*cta buttons*/
+.cta-button {
     /*sizing and spacing*/
     padding: 0.75rem 2rem;
     border-radius: 2rem;
     font-size: 0.9rem;
     margin: 0.2em;
-}
-
-/*icon buttons*/
-.icon-button {
-    display: flex;
-}
-
-.favorite-icon {
-    height: 3rem;
-    width: 3rem;
-}
-
-.shop-icon {
-    height: 3.125rem;
-    width: 1.875rem;
-}
-
-/*cta buttons*/
-
-.cta-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     /*typography*/
     font-family: var(--font-display);
     font-size: var(--text-xs);

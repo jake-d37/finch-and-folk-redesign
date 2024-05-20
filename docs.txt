@@ -25,10 +25,8 @@
 
 **PLAN**
 
-- Import fonts and get colors ready
-- Make Heading and Subheading in CSS (use BEM model)
-- Make CTA buttons in CSS
-- Make regular buttons in CSS
-- Make icon buttons in CSS (make icons in Figma and export)
+- make last button type
 
 - Crawling titles
+- fix nav bar after
+- make home page

@@ -3,7 +3,7 @@
     z-index: 0;
     /*width of border should be controlled*/
     display: inline-block;
-    width: min(max(80vw,32rem), 40rem); 
+    width: min(max(80vw,32rem), 75rem); 
 }
 
 .top-border {
