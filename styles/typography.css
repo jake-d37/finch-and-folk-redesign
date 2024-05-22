@@ -38,7 +38,7 @@ body {
     line-height: var(--body-line-height);
 }
 
-@media screen and (max-width: 390px){
+@media screen and (max-width: 460px){
     /*makes sizes based on rem adapt*/
     :root{
         --text-base-size: 8pt;

@@ -1,0 +1,62 @@
+/*product tag styling*/
+.product-tag {
+    /*typography*/
+    font-family: var(--font-primary);
+    font-size: var(--text-base-size);
+    color: var(--color-text-light);
+    /*default color (category tags)*/
+    background-color: var(--color-accent-2);
+    /*border rounding*/
+    border-radius: 0 2rem 0 2rem;
+    /*sizing*/
+    display: inline-block;
+    padding: 0.1rem 1rem 0.15rem 1rem;
+}
+.product-tag-warn {
+    /*red color emphasises warning*/
+    background-color: var(--color-urgent);
+}
+
+.product-tag-sale {
+    /*contrast color to category but not cautionary like warning*/
+    background-color: var(--color-accent-1);
+}
+
+/*add to cart button*/
+
+
+/*product image*/
+
+
+/*favourite button*/
+.product-save-button {
+    fill: none;
+}
+
+.product-save-path {
+    stroke: var(--color-text-dark);
+    fill: none;
+    transition: fill 0.3s ease-out;
+}
+
+.animate-save {
+    animation: save-product 0.3s ease-out forwards;
+}
+
+/*CHANGE TO JS BEHAVIOUR
+.product-save-button:hover .product-save-path {
+    animation: save-product 0.3s ease-out forwards;
+}*/
+
+
+@keyframes save-product {
+    from {
+        fill: none;
+        stroke: var(--color-text-dark);
+    }
+
+    to {
+        fill: var(--color-accent-1);
+        stroke: var(--color-accent-1);
+    }
+}

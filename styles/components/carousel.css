@@ -1,0 +1,42 @@
+.carousel {
+    display: flex;
+    /*hide when text is outside border*/
+    overflow-x: hidden;
+    /*ensure all text is on the one line*/
+    white-space: nowrap;
+    /*default width*/
+    width: 200px;
+}
+
+.crawling-title{
+    display: flex;
+    justify-content: center;
+    /*ensure looping animation*/
+    animation: slide 15s linear infinite;
+    /*typography*/
+    font-family: var(--font-display);
+    font-size: var(--text-sm);
+    /*keep it behind header*/
+    z-index: 0;
+}
+
+.crawling-content {
+    margin-right: 2rem;
+}
+
+@keyframes slide {
+    from {
+        /* Adjusted to transform for compatibility */
+        transform: translateX(0); 
+    }
+    to {
+        /* Moves the entire width of the original content */
+        transform: translateX(-50%); 
+    }
+}
+
+/*specific types*/
+.our-story {
+    color:var(--color-primary);
+    color:var(--color-secondary);
+}

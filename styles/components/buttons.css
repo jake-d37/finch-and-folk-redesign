@@ -26,24 +26,38 @@
 
 /*add hover, pressed, and focused states*/
 
+.btn:hover{
+    /*nice little transition*/
+    transform: translateY(-0.3rem);
+    transition: all 0.2s ease-out;
+}
+
+.btn:focus-visible {
+    outline: none; 
+    box-shadow: 0 0 5px 2px grey;
+}
+
 /*icon buttons*/
 .icon-button {
-    /*border: 0;*/
+    /*override border and padding on default button*/
+    border: 0;
     padding: 0;
-    justify-content: space-around;  /* Center align horizontally, if needed */
+    
+    justify-content: center;  /* Center align horizontally, if needed */
     width: 2rem;
     height: 2rem;
 }
 
-.favorite-icon { 
+.icon-button:focus-visible{
+    box-shadow: 0 0 5px 2px grey,
+                inset 0 0 5px 2px grey;
+}
+
+.icon-image { 
     height: 2rem;
     width: 2rem;
 }
 
-.shop-icon {
-    height: 2rem;
-    width: 2rem;
-}
 
 /*cta buttons*/
 .cta-button {
@@ -71,18 +85,7 @@
     font-size: var(--text-sm);
     /*visuals*/
     background-color: var(--color-accent-2);
-    box-shadow: 0px 0.3em 10px rgba(0,0,0,0.05);
     transform: translateY(-0.3rem);
-    /*transition*/
-    transition: all 0.2s ease-out;
-    /*sizing*/
-    width: 14.25rem;
-    height: 4.25rem;
-}
-
-.cta-button:focus{
-    border-color: var(--color-accent-1);
-    box-shadow: 0px 0.3em 10px rgba(0,0,0,0.05);
     /*transition*/
     transition: all 0.2s ease-out;
 }

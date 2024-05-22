@@ -1,22 +1,22 @@
 **COMPONENTS TO INCLUDE**
 
-- Page Header
-- Subheading 
+-DONE Page Header
+-DONE Subheading 
 - F&F Logo
-- CTA Button
+-DONE CTA Button
 - Category button (normal border, top right border, top left border)
-- Border Decoration
-- Scrolling Header
-- Icon button (eg. hamburger, filter, cart, favourites)
+-DONE Border Decoration
+-DONE Scrolling Header
+-DONE Icon button (eg. hamburger, filter, cart, favourites)
 - Navbar/Header
-    - Logo 2
-    - Searchbar
+    -DONE Logo 2
+    -DONE Searchbar
 - Product Card
     - Add to cart shortcut
     - Favourite Button
     - Image
     - Tags
-- Button (dark, invert)
+-DONE Button (dark, invert)
 - Text field (dark, invert)
 - Recommended box 
     - stars
@@ -30,3 +30,6 @@
 - Crawling titles
 - fix nav bar after
 - make home page
+
+**CHANGES MADE**
+Logo changed to have baby instead of ampersand

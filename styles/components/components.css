@@ -1,4 +1,5 @@
 /*import component style sheets to link them to main style sheet*/
 @import url('buttons.css');
 @import url('borders.css');
-@import url('header.css');
+@import url('carousel.css');
+@import url('product-card.css')

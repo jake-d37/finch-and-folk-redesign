@@ -15,6 +15,8 @@ html {
     background-color: var(--color-primary);
     /*width and height includes padding and border*/
     box-sizing: border-box;
+    /*smooth scroll transition*/
+    scroll-behavior: smooth;
 }
 
 *,
@@ -34,7 +36,7 @@ html {
 /* Track */
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
-    background: var(--color-primary);
+    background: var(--color-primary-var-1);
     
 }
 
@@ -42,6 +44,7 @@ html {
 ::-webkit-scrollbar-thumb {
     box-shadow: inset 0 0 5px grey;
     background: var(--color-secondary);
+    border-radius: 2pt;
 }
 
 /* Handle on hover */

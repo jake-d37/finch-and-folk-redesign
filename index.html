@@ -10,18 +10,28 @@
     <link href="https://fonts.cdnfonts.com/css/qaligo" rel="stylesheet">
     <!--styling-->
     <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script type="module" src="/scripts/script.js"></script>
     <title>Finch and Folk - Home</title>
+    <link rel="icon" href="/images/icons/logo-icon.svg" type="image/svg+xml">
 </head>
 <body>
     <div class="header">
         <div class="nav-group nav-left">
-            <a href="#" class="btn icon-button"><img class="favorite-icon" src="/images/icons/favourites-icon.svg"></a>
-            <a href="#" class="btn icon-button"><img class="shop-icon" src="/images/icons/shop-icon.svg"></a>
+            <a href="#" class="btn icon-button">
+                <img class="icon-image" src="/images/icons/hamburger-icon.svg" alt="Find by Category">
+            </a>
+            <a href="#" class="btn icon-button">
+                <img class="icon-image" src="/images/icons/logo-icon.svg" alt="Home">
+            </a>
         </div>
         <input type="text" name="search" id="search" class="search-bar" placeholder="Find products">
         <div class="nav-group nav-right">
-            <a href="#" class="btn icon-button"><img class="favorite-icon" src="/images/icons/favourites-icon.svg"></a>
-            <a href="#" class="btn icon-button"><img class="shop-icon" src="/images/icons/shop-icon.svg"></a>
+            <a href="#" class="btn icon-button">
+                <img class="icon-image" src="/images/icons/favourites-icon.svg" alt="Saved for Later">
+            </a>
+            <a href="#" class="btn icon-button">
+                <img class="icon-image" src="/images/icons/shop-icon.svg" alt="View Cart">
+            </a>
         </div>
     </div>
 
@@ -32,6 +42,38 @@
         <h1 class = "heading page-heading">Finch and Folk</h1>
         <p class = "text-content page-description">A beautiful designer label for babies and kids</p>
         <a class = "btn cta-button" href="#">Shop All</a>
+        <div class="carousel">
+            <div class = "crawling-title our-story">
+                <h2 class="crawling-content">Our story</h2>
+                <h2 class="crawling-content">Our story</h2>
+                <h2 class="crawling-content">Our story</h2>
+                <h2 class="crawling-content">Our story</h2>
+            </div>
+        </div>
+        <div class="carousel">
+            <div class = "crawling-title categories">
+                <h2 class="crawling-content">Categories</h2>
+                <h2 class="crawling-content">Categories</h2>
+                <h2 class="crawling-content">Categories</h2>
+                <h2 class="crawling-content">Categories</h2>
+            </div>
+        </div>
+        <div class="carousel">
+            <div class = "crawling-title subscribe">
+                <h2 class="crawling-content">Subscribe</h2>
+                <h2 class="crawling-content">Subscribe</h2>
+                <h2 class="crawling-content">Subscribe</h2>
+                <h2 class="crawling-content">Subscribe</h2>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p class="product-tag product-tag-warn">OUT OF STOCK</p>
+        <p class="product-tag product-tag-sale">SALE</p>
+        <p class="product-tag">Soft Books</p>
+        <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+            <path d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+        </svg>
     </div>
     <div class = "border-container">
         <img class = "border bottom-border" src = "images/branding-images/border-decoration.png">
