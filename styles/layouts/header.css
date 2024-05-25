@@ -1,0 +1,78 @@
+/*HEADER*/
+.header {
+    /*allows for control on contents*/
+    display: flex;
+    /*should be fixed to the top of the screen*/
+    position: fixed;
+    /*ensures its rendered on top of other things*/
+    z-index: 10;
+
+    /*take up full width of screen with no gaps*/
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    /*change this to rems to make responsive*/
+    height: 6.25rem;
+
+    /*ensures content leaves as much room in between as permitted*/
+    justify-content: space-around;   
+    align-items: end;
+
+    /*padding*/
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1.5rem;
+
+    background-color: var(--color-secondary);
+}
+
+.nav-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-group > .btn + .btn {
+    /*margins of buttons in nav bar, excluding end buttons*/
+    margin-left: 1rem;
+}
+
+.search-bar {
+    /*desktop visual style*/
+    width: 70%;
+    height: 2rem;
+    border: 0;
+    border-radius: 40px;
+
+    /*placeholder text*/
+    font-family: var(--font-primary);
+    font-size: 1rem;
+
+    /*icon*/
+    background-image: url('/images/icons/search-icon.svg');
+    background-color: var(--color-primary);
+    background-size: 1rem;
+    background-repeat: no-repeat;
+
+    /*icon placement*/
+    background-position: 10px 50%;
+    padding: 0.75rem 0.5rem 0.8rem 2.5rem;
+
+    transition: all 0.2s ease-out;
+}
+
+.search-bar:hover {
+    /*background-color: var(--color-primary-var-1);*/
+    box-shadow: inset 0 0 0.25rem 0.25rem var(--color-primary-var-1);
+    background-position-y: 5%;
+    transition: all 0.2s ease-out;
+}
+
+.nav-left {
+    justify-content: flex-start;
+    margin-right: 1rem;
+}
+
+.nav-right {
+    justify-content: flex-end;
+    margin-left: 1rem;
+}

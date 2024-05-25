@@ -1,0 +1,9 @@
+/*create archway style*/
+.archway-image {
+    display: flex;
+    object-fit: cover;
+    /*add border radius*/
+    border-radius: 50% 50% 0 0;
+
+    width: 100%;
+}

@@ -12,7 +12,7 @@
     /*nothing fits above*/
     margin-top: 0%;
     /*give room before content below*/
-    margin-bottom: 2.8rem;
+    /*margin-bottom: 2.8rem;*/
 }
 
 .page-top-border{
@@ -22,7 +22,7 @@
 
 .bottom-border {
     /*give room for content above*/
-    margin-top: 2.8rem;
+    /*margin-top: 2.8rem;*/
     /*no extra room below*/
     margin-bottom: 0%;
 }

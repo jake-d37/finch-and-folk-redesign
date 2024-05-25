@@ -1,0 +1,91 @@
+/*GRID SETUP*/
+.hero-section {
+    /*lines up margins with border*/
+    margin-right: calc((100% - min(max(80vw,32rem), 75rem)) / 2);
+    margin-left: calc((100% - min(max(80vw,32rem), 75rem)) / 2);
+    /*grid setup*/
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    /*what grid item goes where*/
+    grid-template-areas: 
+        "heading other-images big-image"
+        "tagline other-images big-image"
+        "cta other-images big-image";
+}
+/*assign each grid item to their spot*/
+.heading-container {
+    grid-area: heading;
+}
+.cta-container {
+    grid-area: cta;
+}
+.tagline-container {
+    grid-area: tagline;
+}
+.throwaway-image-container {
+    grid-area: other-images;
+    display: flex;
+}
+.display-image-container {
+    grid-area: big-image;
+    width: 100%;
+}
+
+/*inside grid-item layouts*/
+
+/*set deafault styling*/
+.hero-section > .grid-item {
+    display: flex;
+    padding: 0%;
+}
+/*overwrite if neccessary*/
+/*heading container*/
+.hero-section > .heading-container {
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-align: left;
+}
+.heading-container > .page-heading {
+    width: 70%;
+}
+.hero-section > .tagline-container {
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+.hero-section > .cta-container > .cta-button {
+    width: 60%;
+    height: 80%;
+
+    border-radius: 20rem;
+    font-size: var(--text-sm);
+}
+
+/*adapts to mobile*/
+@media screen and (max-width: 460px){
+    .hero-section {
+        /*removes throwaway images to save screenspace*/
+        grid-template-columns: 3fr 0fr 2fr;
+        grid-template-rows: 2fr 1fr 2fr;
+        grid-template-areas:
+        "heading  other-images big-image"
+        "tagline other-images big-image"
+        "cta cta cta";
+    }
+    /*ensures they do not display*/
+    .throwaway-image-container {
+        visibility: hidden;
+        width: 0%
+    }
+    /*makes sure the title fits*/
+    .hero-section > .cta-container > .cta-button {
+        width: 90%;
+        height: 60%;
+    
+        border-radius: 20rem;
+        font-size: var(--text-sm);
+    }
+    .heading-container > .page-heading {
+        width: 100%;
+    }
+}
