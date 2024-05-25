@@ -169,4 +169,9 @@
         /*change height so image is less stretched on smaller screen*/
         height: 70%;
     }
+
+    /*to counteract the width of the hidden border*/
+    .category-section {
+        margin-left: -1rem;
+    }
 }

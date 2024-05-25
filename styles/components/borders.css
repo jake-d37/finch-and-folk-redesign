@@ -55,3 +55,11 @@
     width: 100vw;
     height: 10rem;
 }
+
+/* remove borders if room does not allow */
+@media screen and (max-width: 460px){
+    .left-border, .right-border {
+        width: 0%;
+        display: none;
+    }
+}
