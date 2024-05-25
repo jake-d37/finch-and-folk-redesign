@@ -1,15 +1,16 @@
 /*GRID SETUP*/
 .hero-section {
     /*lines up margins with border*/
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     margin-right: calc((100% - min(max(80vw,32rem), 75rem)) / 2);
-    margin-left: calc((100% - min(max(80vw,32rem), 75rem)) / 2);
+    margin-left: calc(((100% - min(max(80vw,32rem), 75rem)) / 2)) ;
     /*grid setup*/
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-columns: 1.6fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
     /*what grid item goes where*/
     grid-template-areas: 
         "heading other-images big-image"
-        "tagline other-images big-image"
         "cta other-images big-image";
 }
 /*assign each grid item to their spot*/
@@ -38,27 +39,103 @@
     display: flex;
     padding: 0%;
 }
-/*overwrite if neccessary*/
 /*heading container*/
 .hero-section > .heading-container {
     justify-content: flex-start;
-    align-items: flex-end;
     text-align: left;
+    flex-direction: column;
 }
 .heading-container > .page-heading {
-    width: 70%;
+    /*ensure text doens't wrap too early*/
+    width: 100%;
+    /*pack everything tighter*/
+    margin: 0%;
 }
-.hero-section > .tagline-container {
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: left;
-}
+.heading-container > .page-description {
+    /*space this from the shop all button, since it is more closely linked to the heading*/
+    margin: 0 0 2rem 0;
+    /*ensure text doens't wrap too early*/
+    width: 100%;
+}   
 .hero-section > .cta-container > .cta-button {
-    width: 60%;
+    /*sizing*/
+    width: 90%;
     height: 80%;
-
+    font-size: var(--text-md);
+    /*vertical centering*/
+    align-self: center;
+    /*roudning corners*/
     border-radius: 20rem;
-    font-size: var(--text-sm);
+}
+.hero-section > .display-image-container {
+    display: flex;
+    /*image shows at the end to visually balance with header, which shows at start*/
+    justify-content: flex-end;
+}
+.hero-section > .display-image-container > .display-image {
+    /*show vertically at top to align with heading and throwaway*/
+    align-self: flex-start;
+    /*sizing*/
+    width: 70%;
+    height: 90%;
+}
+.hero-section > .throwaway-image-container {
+    display: flex;
+    /*show them at each end of the container*/
+    justify-content: space-between;
+    /*one image is underneath the other*/
+    flex-direction: column;
+}
+.hero-section > .throwaway-image-container > .image-one {
+    /*sizing*/
+    width: 7rem;
+    height: 45%;
+    /*show toward left end horizontally*/
+    margin-left: 30%;
+    margin-right: auto;
+}
+.hero-section > .throwaway-image-container > .image-two {
+    /*sizing*/
+    width: 7rem;
+    height: 45%;
+    /*show toward right end horizontally*/
+    margin-left: auto;
+    margin-right: 0%;
+}
+
+/*separator*/
+.separator {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 2rem;
+}
+
+.separator > .carousel {
+    width: 30rem;
+}
+
+/*category section*/
+.category-section {
+    margin: 2rem 0 2rem 0;
+    width: 100vw;
+    /*height for testing, remove later*/
+    height: 50rem;
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+}
+.category-rows {
+    display: flex;
+    flex-direction: column;
+}
+.row-one, .row-two {
+    display: flex;
+    flex-direction: row;
+}
+.row-one > .category-button, .row-two > .category-button {
+    margin: 1rem;
 }
 
 /*adapts to mobile*/
@@ -66,26 +143,30 @@
     .hero-section {
         /*removes throwaway images to save screenspace*/
         grid-template-columns: 3fr 0fr 2fr;
-        grid-template-rows: 2fr 1fr 2fr;
+        grid-template-rows: 3fr 1fr;
         grid-template-areas:
         "heading  other-images big-image"
-        "tagline other-images big-image"
         "cta cta cta";
     }
     /*ensures they do not display*/
-    .throwaway-image-container {
-        visibility: hidden;
-        width: 0%
+    .throwaway-image-container {    
+        display: none !important;
     }
-    /*makes sure the title fits*/
+
+    .hero-section > .cta-container {
+        /*center cta, since it makes more sense when taking up the whole width*/
+        justify-content: center;
+    }
     .hero-section > .cta-container > .cta-button {
+        /*buttons changes size to fit screen width, for improved usability*/
         width: 90%;
-        height: 60%;
-    
-        border-radius: 20rem;
-        font-size: var(--text-sm);
+        height: 90%;
     }
-    .heading-container > .page-heading {
-        width: 100%;
+    .hero-section > .display-image-container > .display-image {
+        /*makes it look more center, considering the border radii*/
+        margin-top: auto;
+        margin-bottom: 35%;
+        /*change height so image is less stretched on smaller screen*/
+        height: 70%;
     }
 }

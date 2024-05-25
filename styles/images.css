@@ -3,7 +3,7 @@
     display: flex;
     object-fit: cover;
     /*add border radius*/
-    border-radius: 50% 50% 0 0;
+    border-radius: 7rem 7rem 0 0;
 
     width: 100%;
 }

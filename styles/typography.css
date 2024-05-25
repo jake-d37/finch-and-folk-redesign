@@ -54,7 +54,7 @@ body {
 .page-heading {
     /*size, color, spacing*/
     color: var(--color-accent-2);
-    font-size: var(--text-xl);
+    font-size: var(--text-xxxl);
 }
 
 .text-content {
@@ -64,5 +64,9 @@ body {
 
 .page-description{
     display: block;
-    font-size: var(--text-base-size)
+    font-size: var(--text-lg)
+}
+
+.invert-color {
+    color: var(--color-primary)
 }

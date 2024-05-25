@@ -12,12 +12,18 @@
     z-index: 1;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     background-color: var(--color-primary);
     /*width and height includes padding and border*/
     box-sizing: border-box;
     /*smooth scroll transition*/
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 *,

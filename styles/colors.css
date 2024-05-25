@@ -21,5 +21,7 @@
     --color-primary-var-1: #eaeacc;
 
     /*gradients*/
+    --gradient-accent-one-to-transparent: linear-gradient(#d5a08645, #D5A086 70%);
+    --gradient-accent-two-to-transparent: linear-gradient(#9fc8c045, #9FC8C0 70%);
     /*add later*/ 
 }

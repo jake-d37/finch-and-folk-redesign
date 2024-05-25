@@ -18,7 +18,7 @@
 }
 
 /*inverted color*/
-.invert-color {
+.btn.invert-color {
     border-color: var(--color-text-dark);
     background-color: var(--color-primary);
     color: var(--color-text-dark);
@@ -72,7 +72,7 @@
     /*visuals*/
     background-color: var(--color-accent-1);
     color: var(--color-text-light);
-    box-shadow: 0px 0.5em 1px rgba(0,0,0,0.05);
+    box-shadow: 0px 0.2em 1px rgba(0,0,0,0.05);
     /*spacing and sizing*/
     width: 14rem;
     height: 4rem;
@@ -86,6 +86,84 @@
     /*visuals*/
     background-color: var(--color-accent-2);
     transform: translateY(-0.3rem);
+    box-shadow: 0px 0.5em 1px rgba(0,0,0,0.05);
     /*transition*/
     transition: all 0.2s ease-out;
+}
+
+/*category button*/
+.category-button {
+    border-radius: 2rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    box-shadow: 0px 0.2em 1px rgba(0,0,0,0.05);
+
+    width: 20rem;
+    height: 20rem;
+
+    padding-bottom: 2rem;
+    /*default, will be overwritten*/
+    background: 
+        /* Gradient overlay */
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+        /* Background image */
+        url('https://images.unsplash.com/photo-1593642634367-d91a135587b5');
+
+    /*typography*/
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+    color: var(--color-text-light);
+
+}
+
+.category-button.top-left {
+    border-radius: 70% 2rem 2rem 2rem;
+
+    background: 
+        /* Gradient overlay */
+        var(--gradient-accent-one-to-transparent),
+        /* Background image */
+        url('https://images.unsplash.com/photo-1593642634367-d91a135587b5');
+
+    background-size: cover;
+}
+
+.category-button.top-right {
+    border-radius: 2rem 70% 2rem 2rem;
+
+    background: 
+        /* Gradient overlay */
+        var(--gradient-accent-two-to-transparent),
+        /* Background image */
+        url('https://images.unsplash.com/photo-1593642634367-d91a135587b5');
+
+    background-size: cover;
+}
+
+.category-button.bottom-left {
+    background: 
+        /* Gradient overlay */
+        var(--gradient-accent-two-to-transparent),
+        /* Background image */
+        url('https://images.unsplash.com/photo-1593642634367-d91a135587b5');
+
+    background-size: cover;
+}
+
+.category-button.bottom-right {
+    background: 
+        /* Gradient overlay */
+        var(--gradient-accent-one-to-transparent),
+        /* Background image */
+        url('https://images.unsplash.com/photo-1593642634367-d91a135587b5');
+
+    background-size: cover;
+}
+
+.category-button:hover {
+    box-shadow: 0px 0.5em 1px rgba(0,0,0,0.05);
 }
