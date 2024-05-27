@@ -6,7 +6,6 @@
 @import url("images.css");
 @import url("/styles/components/components.css");
 
-
 * {
     /*to allow for things to be moved back*/
     z-index: 1;

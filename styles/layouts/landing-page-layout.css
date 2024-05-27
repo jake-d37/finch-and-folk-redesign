@@ -117,14 +117,15 @@
 
 /*category section*/
 .category-section {
+    /*spacing*/
     margin: 2rem 0 2rem 0;
-    width: 100vw;
-    /*height for testing, remove later*/
-    height: 50rem;
     padding: 0%;
+    /*extends whole viewport width*/
+    width: 100vw;
+    /*display*/
     display: flex;
+    justify-content: center;
     align-items: center;
-    overflow: visible;
 }
 .category-rows {
     display: flex;
@@ -138,8 +139,115 @@
     margin: 1rem;
 }
 
+/*our story and subscribe sections*/
+.info-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.our-story-section {
+    width: 50%;
+    padding: 2rem;
+    background-color: var(--color-secondary);
+    font-size: var(--text-base-size);
+}
+
+.subscribe-section {
+    width: 50%;
+    padding: 2rem;
+    padding-bottom: 4rem;
+    background-color: var(--color-secondary);
+}
+
+.info-subsection {
+    display: flex;
+    justify-content: center;
+}
+
+.content > .carousel {
+    /*center carousels*/
+    margin: 0 auto 0 auto;
+}
+
+.info-subsection > .content {
+    /*each section has downward flow*/
+    display: flex;
+    flex-direction: column;
+    /*sizing*/
+    width: 80%;
+}
+
+.subscribe-section > .content > * {
+    font-size: var(--text-base-size);
+    /* set desktop colors */
+    color: var(--color-text-light);
+}
+
+.subscribe-section > .content > .text-content {
+    /*paragraph height*/
+    margin-bottom: 2rem;
+}
+
+/*subscribe form*/
+.subscribe-form {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    /*center form*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subscribe-form > .input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe-form > .input-container + .input-container{
+    /*margin between inputs*/
+    margin-top: 0.5rem;
+}
+
+.subscribe-form .input-container:last-of-type {
+    /*margin between submit button and input*/
+    margin-bottom: 1.2rem;
+}
+
+.input-container > .text-input {
+    border-radius: 2pt;
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-text-light);
+
+    font-size: var(--text-base-size);
+    padding: 0.5rem 1rem 0.7rem 1rem;
+
+    /*typography*/
+    font-family: var(--font-primary);
+    color: var(--color-text-light);
+}
+
+.input-container > .text-label {
+    color: var(--color-text-light);
+    font-family: var(--font-primary);
+}
+
+.thank-you-message {
+    /*is displayed when form is submitted*/
+    display: none;
+}
+
+/*award image*/
+.award-image {
+    display: flex;
+    width: 25%;
+    /*center the image*/
+    margin: 5rem auto 5rem auto;
+}
+
+
 /*adapts to mobile*/
-@media screen and (max-width: 460px){
+@media screen and (max-width: 768px){
     .hero-section {
         /*removes throwaway images to save screenspace*/
         grid-template-columns: 3fr 0fr 2fr;
@@ -173,5 +281,51 @@
     /*to counteract the width of the hidden border*/
     .category-section {
         margin-left: -1rem;
+    }
+
+    /*info section adapting*/
+    .info-section {
+        /*in mobile mode, subscribe section goes under our story, instead of next to*/
+        flex-direction: column;
+    }
+    .info-subsection {
+        /*no longer next to so they can take up the whole space*/
+        width: 100%;
+    }
+    
+    .subscribe-section {
+        /*no longer in the dark section, must change color to be seen*/
+        background-color: var(--color-primary);
+    }
+    .subscribe-section > .content > * {
+        /*no longer in the dark section, must change color to be seen*/
+        color: var(--color-text-dark);
+    }
+    /*subscribe form*/
+    .input-container > .text-input, .input-container > .text-label {
+        /*no longer in the dark section, must change color to be seen*/
+        color: var(--color-text-dark);
+    }
+
+    .input-container > .text-input {
+        /*no longer in the dark section, must change color to be seen*/
+        background-color: var(--color-primary);
+        border: 1px solid var(--color-text-dark);
+    }
+
+    .subscribe-form > .btn.invert-color {
+        /*no longer in the dark section, must change color to be seen*/
+        background-color: var(--color-secondary);
+        color: var(--color-text-light);
+    }
+
+    .subscribe-section {
+        /*on same level as award image, extra padding makes spacing seem uneven*/
+        padding-bottom: 0;
+    }
+
+    .award-image {
+        width: 40%;
+        margin: 5rem auto 5rem auto;
     }
 }

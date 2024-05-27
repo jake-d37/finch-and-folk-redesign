@@ -19,14 +19,6 @@
     /*rems are based on font-size, which will be the base size*/
     font-size: var(--text-base-size);
 
-    /*spacing*/
-    /*WORK OUT WHAT THIS IS FOR*/
-    --baseline: 1em;
-    --space-sm: calc(var(--baseline) / 2);
-    --space-md: calc(var(--baseline));
-    --space-lg: calc(var(--baseline) * 2);
-    --space-xl: calc(var(--baseline) * 3);
-
     /*line height*/
     --base-line-height: 1em;
     --heading-line-height: calc(var(--base-line-height) * 1.2);
@@ -38,7 +30,7 @@ body {
     line-height: var(--body-line-height);
 }
 
-@media screen and (max-width: 460px){
+@media screen and (max-width: 768px){
     /*makes sizes based on rem adapt*/
     :root{
         --text-base-size: 8pt;

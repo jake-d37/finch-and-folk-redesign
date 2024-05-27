@@ -1,0 +1,50 @@
+.footer {
+    background-color: var(--color-secondary);
+    /*sizing*/
+    width: 100%;
+    height: 20rem;
+    /*spacing*/
+    padding: 3rem;
+    padding-bottom: 2rem;
+    margin: auto 0 0 0; /*ensures it sticks to the bottom of the page*/
+    /*display*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*logo*/
+.footer-logo-container {   
+    display: flex;
+}
+.footer-logo {
+    width: 50%;
+}
+
+/*socials and privacy agreements*/
+.footer > .footer-options {
+    display: flex;
+    flex-direction: row;
+    /*positioned on each side*/
+    justify-content: space-between;
+}
+
+.fine-print {
+    /*typography*/
+    font-family: var(--font-primary);
+    color: var(--color-text-light);
+    text-decoration: none;
+    vertical-align: bottom;
+}
+
+.footer > .footer-options > .socials {
+    /*socials buttons are lined up*/
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+}
+
+/*all but the first socials icons have a margin*/
+.footer > .footer-options > .socials > .icon-button {
+    margin-left: 1rem;
+}

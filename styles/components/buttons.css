@@ -13,8 +13,10 @@
     border-radius: 2pt;
     background-color: var(--color-secondary);
     color: var(--color-text-light);
-    font-size: 1rem;
+    font-size: var(--text-base-size);
     padding: 0.5rem 3rem 0.7rem 3rem;
+
+    transition: all 0.2s ease-out;
 }
 
 /*inverted color*/
@@ -170,7 +172,7 @@
     box-shadow: 0px 0.5em 1px rgba(0,0,0,0.05);
 }
 
-@media screen and (max-width: 460px){
+@media screen and (max-width: 768px){
     /*adapt category buttons to suit smaller screens*/ 
     .category-button {
         font-size: var(--text-md);

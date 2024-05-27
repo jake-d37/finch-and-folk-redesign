@@ -36,3 +36,5 @@ Logo changed to have baby instead of ampersand
 changed heading of landing page to have ampersand
 changed the mobile view to have the same header as the desktop version
 animation of category buttons changed to be consistent with other buttons
+side borders removed as it created sizing issues
+labels added to the form for better ux
