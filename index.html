@@ -21,16 +21,18 @@
             <a href="#" class="btn icon-button">
                 <img class="icon-image" src="/images/icons/hamburger-icon.svg" alt="Find by Category">
             </a>
-            <a href="#" class="btn icon-button">
+            <a href="index.html" class="btn icon-button">
                 <img class="icon-image" src="/images/icons/logo-icon.svg" alt="Home">
             </a>
         </div>
-        <input type="text" name="search" id="search" class="search-bar" placeholder="Find products">
+        <form action="/pages/results-page.html" method="get" class="search-bar-container">
+            <input type="text" name="search" id="search" class="search-bar" placeholder="Find products">
+        </form>
         <div class="nav-group nav-right">
             <a href="#" class="btn icon-button">
                 <img class="icon-image" src="/images/icons/favourites-icon.svg" alt="Saved for Later">
             </a>
-            <a href="#" class="btn icon-button">
+            <a href="/pages/cart-page.html" class="btn icon-button">
                 <img class="icon-image" src="/images/icons/shop-icon.svg" alt="View Cart">
             </a>
         </div>
@@ -47,7 +49,7 @@
             <p class = "text-content page-description">A beautiful designer label for babies and kids</p>
         </div>
         <div class="grid-item cta-container">
-            <a class = "btn cta-button" href="#">Shop All</a>
+            <a class = "btn cta-button" href="/pages/results-page.html">Shop All</a>
         </div>
         <div class="grid-item throwaway-image-container">
             <picture class="archway-image throwaway-image image-one">

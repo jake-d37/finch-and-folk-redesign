@@ -1,6 +1,8 @@
 @import url('/styles/layouts/header.css');
 @import url('/styles/layouts/footer.css');
 @import url('/styles/layouts/landing-page-layout.css');
+@import url('/styles/layouts/results-page-layout.css');
+@import url('/styles/layouts/product-page-layout.css');
 
 .grid-container {
     display: grid;
@@ -10,5 +12,5 @@
 .grid-item {
     /*for testing*/
     outline: 2px solid red;
-    outline: none;
+    /* outline: none; */
 }

@@ -2,13 +2,13 @@
 
 -DONE Page Header
 -DONE Subheading 
-- F&F Logo
+-DONE F&F Logo
 -DONE CTA Button
-- Category button (normal border, top right border, top left border)
+-DONE Category button (normal border, top right border, top left border)
 -DONE Border Decoration
 -DONE Scrolling Header
 -DONE Icon button (eg. hamburger, filter, cart, favourites)
-- Navbar/Header
+-DONE Navbar/Header
     -DONE Logo 2
     -DONE Searchbar
 - Product Card
@@ -17,19 +17,11 @@
     - Image
     - Tags
 -DONE Button (dark, invert)
-- Text field (dark, invert)
+-DONE Text field (dark, invert)
 - Recommended box 
     - stars
 - Your Item box
 - Cart dropdown
-
-**PLAN**
-
-- make last button type
-
-- Crawling titles
-- fix nav bar after
-- make home page
 
 **CHANGES MADE**
 Logo changed to have baby instead of ampersand
@@ -38,3 +30,8 @@ changed the mobile view to have the same header as the desktop version
 animation of category buttons changed to be consistent with other buttons
 side borders removed as it created sizing issues
 labels added to the form for better ux
+
+**REMINDERS**
+- implement all the images
+- have different LODs of images in picture Tags
+- implement anchor links

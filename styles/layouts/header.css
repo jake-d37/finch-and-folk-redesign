@@ -36,9 +36,15 @@
     margin-left: 1rem;
 }
 
-.search-bar {
+.search-bar-container {
     /*desktop visual style*/
     width: 70%;
+    height: 2rem;
+}
+
+.search-bar {
+    /*fit the container*/
+    width: 100%;
     height: 2rem;
     border: 0;
     border-radius: 40px;
