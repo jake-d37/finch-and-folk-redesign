@@ -1,8 +1,10 @@
 .product-cards-container {
+    /* spacing and sizing */
     width:100%;
     padding: 0%;
     margin-top: 2rem;
 
+    /* positioning */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -12,19 +14,22 @@
 }
 
 .product-card {
+    /* visuals */
     background-color: rgba(0,0,0,0);
     border: none;
+    /*spacing and sizing*/
     padding: 0;
     margin-bottom: 2rem;
     width: 47.5%;
-
+    /* positioning */
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-
+    /*need this to ensure child elements with absolute position don't get pinned to top of page*/
     position: relative;
 }
 .product-card:nth-child(2n) {
+    /* adds a margin between cards on each row */
     margin-left: 5%;
 }
 
@@ -75,6 +80,7 @@
 .add-to-cart-button {
     background-color: rgba(0,0,0,0);
     width: 4rem;
+    /*pin to bottom right*/
     position: absolute;
     bottom: 1rem;
     right: 0;
@@ -82,27 +88,35 @@
 }
 
 /*text banner in add to cart button */
+/* this is not visible to begin with */
 .add-to-cart-button > .text-prompt {
+    /* visuals */
     box-shadow: 0px 0.2em 1px rgba(0,0,0,0.05);
     background-color: white;
     border-radius: 0.5rem;
-    width: 0%;
+
+    /* sizing and spacing*/
+    width: 0%; /*not visible*/
     height: 3rem;
-    position: absolute;
     padding-left: 1rem;
 
+    /* positioning */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: absolute;
 }
 
 .add-to-cart-button > .text-prompt > .text-content{
+    /* ensure this can't be seen when the text prompt cannot be seen */
     color: rgba(0,0,0,0);
-    line-height: 100%;
     width: 60%;
+    /*typography*/
+    line-height: 100%;
     text-align: left;
 }
 
+/*animations for adding to cart (text banner and text only). the class is added to an element in javascript, causing the animation to play*/
 .animate-add {
     animation: add-product 0.3s ease-out forwards;
 }
@@ -172,14 +186,17 @@
 /*product image*/
 .image-container{
     display: flex;
+    /*align vertically (its fine since there's only one child of this*/
     flex-direction: column;
     justify-content: center;
+    /*create gap between info and image*/
     margin-right: 1rem;
 }
 
 .product-image{
     width:10rem;
     height: 10rem;
+    /*ensure image doesn't stretch despite forced square size*/
     object-fit: cover;
 }
 
@@ -187,6 +204,7 @@
     border-radius: 0.5rem;
     width:100%;
     height: 100%;
+    /*ensure image doesn't stretch despite forced square size*/
     object-fit: cover;
 }
 
@@ -194,7 +212,7 @@
 .btn.save-button {
     background-color: var(--color-primary);
 
-    /* absolute position */
+    /* pin to top right of card */
     margin: 0;
     position: absolute;
     right: 0;
@@ -213,10 +231,10 @@
     transition: fill 0.3s ease-out;
 }
 
+/*animations for saving item. the class is added to an element in javascript, causing the animation to play*/
 .animate-save {
     animation: save-product 0.3s ease-out forwards;
 }
-
 .animate-unsave {
     animation: unsave-product 0.3s ease-out forwards;
 }

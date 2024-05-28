@@ -4,9 +4,6 @@
     margin-bottom: 5rem;
     margin-right: calc((100% - min(max(80vw,32rem), 75rem)) / 2);
     margin-left: calc(((100% - min(max(80vw,32rem), 75rem)) / 2)) ;
-
-    display: flex;
-    flex-direction: column;
 }
 
 .heading-section {
@@ -22,13 +19,7 @@
 .heading-section > .results-info {
     display: flex;
     flex-direction: row;
-    margin: 0;
-    padding: 0;
-}
-
-.heading-section > .results-info {
-    display: flex;
-    flex-direction: row;
+    /*show text at both sides of the page*/
     justify-content: space-between;
     margin: 0;
     padding: 0;
@@ -42,6 +33,7 @@
 .page-navigation {
     display: flex;
     flex-direction: row;
+    /*show text at both sides of the page*/
     justify-content: space-between;
     margin: 0;
     padding: 0;

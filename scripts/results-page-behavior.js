@@ -51,6 +51,7 @@ document.querySelectorAll('.add-to-cart-button').forEach(button => {
     });
 });
 
+//the svg animation for adding to cart
 function addAnimation(icon){
     //get all the needed parameters
     //set the transition on each for smooth animation
@@ -62,37 +63,21 @@ function addAnimation(icon){
     rect2.style.transition = "all 0.3s ease-out";
 
     //set new values
-    //circle fill
     circle.setAttribute("fill","white");
-    //rect1 x,y,height,transform,fill
+
     rect1.setAttribute("x","8");
     rect1.setAttribute("y","24.2427");
     rect1.setAttribute("height","16.2364");
     rect1.setAttribute("transform","rotate(-45 8 24.2427)");
     rect1.setAttribute("fill","#353839");
-    //rect2 x,y,transform,fill
+
     rect2.setAttribute("x","37.2133");
     rect2.setAttribute("y","11");
     rect2.setAttribute("transform","rotate(45 37.2133 11)");
     rect2.setAttribute("fill","#353839");
 }
 
-/*
-SELECTED
-<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="25" cy="25" r="25" fill="#FFFFF0"/>
-<rect x="8" y="24.2427" width="6" height="16.2364" rx="1" transform="rotate(-45 8 24.2427)" fill="#353839"/>
-<rect x="37.2133" y="11" width="6" height="30" rx="1" transform="rotate(45 37.2133 11)" fill="#353839"/>
-</svg>
-
-UNSELECTED
-<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="25" cy="25" r="25" fill="#353839"/>
-<rect x="22" y="8" width="6" height="30" rx="1" fill="#FFFFF0"/>
-<rect x="10" y="26" width="6" height="30" rx="1" transform="rotate(-90 10 26)" fill="#FFFFF0"/>
-</svg>
-*/
-
+//the svg animation for unadding from cart
 function unaddAnimation(icon){
     //get all the needed parameters
     //set the transition on each for smooth animation
@@ -104,15 +89,14 @@ function unaddAnimation(icon){
     rect2.style.transition = "all 0.3s ease-out";
 
     //set new values
-    //circle fill
     circle.setAttribute("fill","#353839");
-    //rect1 x,y,height,transform,fill
+
     rect1.setAttribute("x","22");
     rect1.setAttribute("y","8");
     rect1.setAttribute("height","30");
     rect1.setAttribute("transform","none");
     rect1.setAttribute("fill","#FFFFF0");
-    //rect2 x,y,transform,fill
+
     rect2.setAttribute("x","10");
     rect2.setAttribute("y","26");
     rect2.setAttribute("transform","rotate(-90 10 26)");
