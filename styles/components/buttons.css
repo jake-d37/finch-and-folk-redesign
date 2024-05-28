@@ -60,6 +60,18 @@
     width: 2rem;
 }
 
+/*afterpay button*/
+.afterpay {
+    background-color: #B2FCE4;
+    padding: 0;
+    display: flex;
+}
+
+.afterpay-logo {
+    height: 2rem;
+    margin: 0;
+    margin-top: 0.3rem;
+}
 
 /*cta buttons*/
 .cta-button {

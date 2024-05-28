@@ -57,3 +57,13 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--color-secondary);
 }
+
+input[type="number"], button {
+    -webkit-appearance: none; /* Remove default styles in Safari */
+    -moz-appearance: none; /* Remove default styles in Firefox */
+    appearance: none;
+    outline: none;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+}

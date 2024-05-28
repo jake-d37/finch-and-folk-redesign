@@ -1,9 +1,34 @@
+/*return button is appended directly to the body*/
+.back-button.btn {
+    /*positioning*/
+    display: flex;
+    justify-content: flex-start;
+    /*spacing*/
+    margin-top: 1rem;
+    padding: 0;
+    margin-left: calc(((100% - min(max(80vw,32rem), 75rem)) / 2)) ;
+    /*typography*/
+    color: var(--color-text-grey);
+    font-weight: 700;
+    text-decoration: none;
+    background: none;    
+}
+.back-button > img {
+    /* the icon is the wrong way round, needed to flip */
+    transform: scaleX(-1);
+    margin-right: 1rem;
+}
+
 .product-section {
+    /*lines up margins with border*/
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: calc((100% - min(max(80vw,32rem), 75rem)) / 2);
+    margin-left: calc(((100% - min(max(80vw,32rem), 75rem)) / 2)) ;
+    /* positioning */
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border: 2px solid green;
-    margin-top: 2rem;
 }
 
 .product-images-grid {
@@ -14,7 +39,7 @@
     grid-template-areas: 
         "image-options main-image";
 
-    width: 20rem;
+    width: 100%;
     height: 100%;
 }
 
@@ -26,9 +51,23 @@
     justify-content: flex-end;
 }
 
+.image-options > .btn {
+    /*in desktop mode, btns are on right side*/
+    align-self: flex-end;
+    /*remove default btn style*/
+    background: none;
+    /*sizing and spacing*/
+    width: 5rem;
+    height: 5rem;
+    margin: 0;
+    padding: 0;
+}
+
 .image-option {
     display: flex;
     width: 100%;
+    height: 100%;
+    /*don't stretch the image*/
     object-fit: cover;
 }
 
@@ -43,10 +82,153 @@
     height: 100%;
 }
 
+.main-image > img{
+    box-shadow: 0px 1rem 1px rgba(0,0,0,0.05);
+}
+
 /*description section*/
 .description-section {
-    margin-right: calc((100% - min(max(80vw,32rem), 75rem)) / 2);
-    border: 2px solid blue;
+    width: 60%;
+}
+
+.purchase-buttons {
+    /*spacing*/
+    margin: 2rem 0 2rem 0;
+}
+.purchase-buttons > .btn {
+    width: 100%;
+}
+
+.star-path {
+    /* color for star rating visual (since it is just an svg) */
+    fill: var(--color-star);
+    stroke: var(--color-text-dark)
+}
+
+/* price and star rating */
+.essential-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quantity-selector {
+    display: flex;
+    /*border*/
+    border: 1px solid var(--color-text-grey);
+    border-radius: 0.5rem;
+    /* sizing and spacing */
+    width: fit-content;
+    height: 3rem;
+    margin-top: 1rem;
+    padding-bottom: 0.2rem;
+}
+
+/* plus and minus buttons */
+.quantity-selector > .btn {
+    /* positioning */
+    align-self: center;
+    /* spacing */
+    padding: 0;
+    margin: 1.25rem;
+    /* typography */
+    font-family: var(--font-primary);
+    color: var(--color-text-dark);
+    /* overwrite default btn style */
+    border: none;
+    background: none;
+}
+
+.quantity {
+    /* vertically align text */
+    align-self: center;
+}
+
+.description {
+    /*not displayed until user opens*/
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 0%; /*cannot be seen*/
+    color: rgba(0,0,0,0); /*inheritted by child element*/
+}
+
+.description > .text-content {
+    /*not displayed until user opens*/
+    color: inherit; /*so color can be set in the animation that alters this element's parent*/
+    font-size: var(--text-base-size);
+}
+
+/* animations to open and close description. these classes will be attached to element via javascript, which will trigger animation */
+.animate-open {
+    animation: open-description 0.3s ease-out forwards;
+}
+.animate-unopen {
+    animation: close-description 0.3s ease-out forwards;
+}
+
+@keyframes open-description {
+    from {
+        height: 0%;
+        color: rgba(0,0,0,0);
+    }
+
+    to {
+        height: 100%;
+        color: var(--color-text-dark);
+    }
+}
+
+@keyframes close-description {
+    from {
+        display: flex;
+        height: 100%;
+        color: var(--color-text-dark);
+    }
+
+    to {
+        display: none;
+        height: 100%;
+        color: rgba(0,0,0,0);
+    }
+}
+
+/*typography*/
+.product-title {
+    margin: 0;;
+    font-family: var(--font-primary);
+}
+.price {
+    margin: 0;;
+    font-family: var(--font-primary);
+}
+
+/*collapse/expand button for description*/
+.expand {
+    /* two components of this element, set in a row */
+    display: flex;
+    flex-direction: row;
+    /* override default btn style */
+    background: none;
+    border: none;
+    /* spacing */
+    margin: 0%;
+    padding: 0;
+    /* typography */
+    font-family: var(--font-primary);
+    color: var(--color-text-grey);
+}
+
+.expand-icon {
+    height: 0.75rem;
+    margin-right: 0.25rem;
+    align-self: center;
+    /* rotates when description is expanded */
+    transition: all 0.3s ease-in-out;
+}
+
+.expand-icon.rotate {
+    /* class is added to icon by javascript, which triggers this animations */
+    transform: rotate(90deg);
 }
 
 /*adapts to mobile*/
@@ -63,15 +245,13 @@
         /*center grid*/
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 2rem;
         /*grid setup*/
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr;
         /*what grid item goes where*/
         grid-template-areas: 
             "main-image image-options";
-
-        width: 100%;
-        height: 20rem;
     }
 
     .description-section {
@@ -79,5 +259,21 @@
         margin-left: auto;
         margin-right: auto;
         width: 100%;
+    }
+
+    .main-image {
+        padding: 0 1rem 0 0;
+    }
+    .image-options > .btn {
+        align-self: flex-start;
+    }
+
+    .image-option + .image-option {
+        margin-top: 1rem;
+    }
+
+    .purchase-buttons > .btn {
+        font-size: var(--text-lg);
+        height: 5rem;
     }
 }

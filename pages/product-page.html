@@ -42,19 +42,32 @@
         <img class = "border top-border page-top-border" src = "/images/branding-images/border-decoration.png">
     </div>
 
+    <a class="btn back-button" href="/pages/results-page.html">
+        <img src="/images/icons/arrow-icon.svg">
+        Return
+    </a>
     <div class="product-section">
         <div class="grid-container product-images-grid">
             <div class="grid-item image-options">
-                <picture class="image-option">
-                    <img class="image-option" src="https://images.unsplash.com/photo-1593642634367-d91a135587b5">
-                </picture>
-                <picture class="image-option">
-                    <img class="image-option" src="https://images.unsplash.com/photo-1593642634367-d91a135587b5">
-                </picture>
+                <button class="btn" onclick="changeMainImage(0)">
+                    <picture class="image-option">
+                        <img class="image-option" src="/images/product-images/crochet-bunny/image-1-high.jpg">
+                    </picture>
+                </button>
+                <button class="btn" onclick="changeMainImage(1)">
+                    <picture class="image-option">
+                        <img class="image-option" src="/images/product-images/crochet-bunny/image-2-high.jpg">
+                    </picture>
+                </button>
+                <button class="btn" onclick="changeMainImage(2)">
+                    <picture class="image-option">
+                        <img class="image-option" src="/images/product-images/crochet-bunny/image-3-high.jpg">
+                    </picture>
+                </button>
             </div>
             <div class="grid-item main-image">
-                <picture class="archway-image main-image">
-                    <img class="archway-image" src="https://images.unsplash.com/photo-1593642634367-d91a135587b5">
+                <picture class="archway-image main-image" id="main-image">
+                    <img class="archway-image" src="/images/product-images/crochet-bunny/image-1-high.jpg">
                 </picture>
             </div>
         </div>
@@ -63,27 +76,43 @@
             <div class="essential-info">
                 <h2 id="price" class="price">$30.00</h2>
                 <div class="star-rating">
-                    <!--do 5 stars here, each with id (eg. star-1, star-2, etc.)-->
+                    <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                        <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                    </svg>
+                    <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                        <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                    </svg>
+                    <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                        <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                    </svg>
+                    <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                        <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                    </svg>
+                    <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                        <path d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                    </svg>
                 </div>
             </div>
             <div class="quantity-selector">
                 <!--styling for quantity selector-->
+                <button class="btn" onclick="decreaseQuantity()">-</button>
+                <p id="quantity" class="quantity text-content">1</p>
+                <button class="btn" onclick="increaseQuantity()">+</button>
             </div>
             <div class="purchase-buttons">
-                <button class="btn" id="add-to-cart-button">Add to Cart</button>
-                <button class="btn afterpay" id="afterpay-button">
+                <a class="btn" id="add-to-cart-button" href="/pages/cart-page.html">Add to Cart</a>
+                <a class="btn afterpay" id="afterpay-button" href="/pages/cart-page.html">
+                    <!--afterpay logo-->
                     <picture>
-                        <img src=""> <!--afterpay logo-->
+                        <img class="afterpay-logo" src="/images/branding-images/afterpay-logo.png"> 
                     </picture>
-                </button>
+                </a>
             </div>
-            <button class="expand">
-                <picture class="expand-icon">
-                    <img class="expand-icon" src="">
-                </picture>
+            <button class="expand" onclick="toggleDescriptionOn()">
+                <img id="expand-icon" class="expand-icon" src="/images/icons/arrow-icon.svg">
                 <div class="expand-title">Description</div>
             </button>
-            <div class="description collapsible">
+            <div class="description collapsible" id="description">
                 <p class="text-content">Cute, simple and totally loveable this bunny is ageless.</p>
                 <p class="text-content">This rattle will appeal to every baby or toddler and will soon become a great companion. Made from 100% organic cotton, it is soft to the touch but very strong. Vegan and cruelty-free.</p>
                 <p class="text-content">Approximate size: 20 x 10 cm</p>
@@ -116,5 +145,8 @@
             </div>
         </div>
     </div>
+
+    <!-- attach behaviour script -->
+    <script src="/scripts/product-page-behavior.js"></script>
 </body>
 </html>
