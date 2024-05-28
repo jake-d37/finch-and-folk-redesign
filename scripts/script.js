@@ -1,5 +1,1 @@
-import * as animations from './animation-behavior.js'
-
-animations.initialiseAnimations();
-console.log("Here");
-//fix later
+//going to use to attach all reused scripts to (if their are any)

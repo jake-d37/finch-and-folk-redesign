@@ -1,14 +1,12 @@
 .product-section {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    border: 2px solid green;
+    margin-top: 2rem;
 }
 
 .product-images-grid {
-    /*lines up margins with border*/
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: calc(((100% - min(max(80vw,32rem), 75rem)) / 2));
     /*grid setup*/
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr;
@@ -17,15 +15,32 @@
         "image-options main-image";
 
     width: 20rem;
-    height: 20rem;
+    height: 100%;
 }
 
 .image-options {
     grid-area: image-options;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.image-option {
+    display: flex;
+    width: 100%;
+    object-fit: cover;
+}
+
+.image-option + .image-option {
+    margin-top: 0.2rem;
 }
 
 .main-image {
     grid-area: main-image;
+
+    padding: 0 1rem 0 1rem;
+    height: 100%;
 }
 
 /*description section*/
@@ -40,7 +55,6 @@
         /*center content*/
         margin-left: auto;
         margin-right: auto;
-        border: 2px solid green;
         flex-direction: column;
         justify-content: center;
         width: 70%;
@@ -57,7 +71,7 @@
             "main-image image-options";
 
         width: 100%;
-        height: 25rem;
+        height: 20rem;
     }
 
     .description-section {
@@ -65,7 +79,5 @@
         margin-left: auto;
         margin-right: auto;
         width: 100%;
-        margin-left: calc((100% - min(max(80vw,32rem), 75rem)) / 2);
-        border: 2px solid blue;
     }
 }

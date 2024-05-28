@@ -1,0 +1,50 @@
+.page-content {
+    /*lines up margins with border*/
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    margin-right: calc((100% - min(max(80vw,32rem), 75rem)) / 2);
+    margin-left: calc(((100% - min(max(80vw,32rem), 75rem)) / 2)) ;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.heading-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading-section > .page-heading {
+    font-size: var(--text-lg);
+    margin-bottom: 0%;
+}
+
+.heading-section > .results-info {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.heading-section > .results-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.heading-section > .results-info > .text-content {
+    margin: 0;    
+    font-size: var(--text-md);
+}
+
+.page-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+

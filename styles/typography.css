@@ -54,6 +54,11 @@ body {
     font-family: var(--font-primary);
 }
 
+.product-title {
+    color: var(--color-text-dark);
+    font-family: var(--font-primary);
+}
+
 .page-description{
     display: block;
     font-size: var(--text-lg)
@@ -61,4 +66,10 @@ body {
 
 .invert-color {
     color: var(--color-primary)
+}
+
+.prompt {
+    margin: 0;
+    color:var(--color-text-grey);
+    font-size: var(--text-sm)
 }

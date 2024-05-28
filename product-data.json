@@ -1,0 +1,92 @@
+{
+    "product-1": {
+        "name": "Crochet Bunny",
+        "rating": 5,
+        "price": "$30.00",
+        "tags": "SALE;Toys", 
+        "images": [
+            {
+                "image-sources-1": [
+                    "/images/image-high.png",
+                    "/images/image-mid.png",
+                    "/images/image-low.png"
+                ],
+                "image-sources-2": [
+                    "/images/image-high.png",
+                    "/images/image-mid.png",
+                    "/images/image-low.png"
+                ],
+                "image-sources-3": [
+                    "/images/image-high.png",
+                    "/images/image-mid.png",
+                    "/images/image-low.png"
+                ],
+                "image-sources-4": [
+                    "/images/image-high.png",
+                    "/images/image-mid.png",
+                    "/images/image-low.png"
+                ]
+            }
+        ]
+    },
+    "product-2": {
+        "name": "Aussie Animals Watercolour",
+        "rating": 4,
+        "price": "$45.99",
+        "tags": "Soft Books", 
+        "images": [
+            {
+                "image-sources-1": [
+                    "/images/image-high.png",
+                    "/images/image-mid.png",
+                    "/images/image-low.png"
+                ],
+                "image-sources-2": [
+                    "/images/image-high.png",
+                    "/images/image-mid.png",
+                    "/images/image-low.png"
+                ],
+                "image-sources-3": [
+                    "/images/image-high.png",
+                    "/images/image-mid.png",
+                    "/images/image-low.png"
+                ],
+                "image-sources-4": [
+                    "/images/image-high.png",
+                    "/images/image-mid.png",
+                    "/images/image-low.png"
+                ]
+            }
+        ]
+    },
+    "product-3": {
+        "name": "Koala Cushion",
+        "rating": 5,
+        "price": "$108.50",
+        "tags": "OUT OF STOCK", 
+        "images": [
+            {
+                "image-sources-1": [
+                    "/images/image-high.png",
+                    "/images/image-mid.png",
+                    "/images/image-low.png"
+                ],
+                "image-sources-2": [
+                    "/images/image-high.png",
+                    "/images/image-mid.png",
+                    "/images/image-low.png"
+                ],
+                "image-sources-3": [
+                    "/images/image-high.png",
+                    "/images/image-mid.png",
+                    "/images/image-low.png"
+                ],
+                "image-sources-4": [
+                    "/images/image-high.png",
+                    "/images/image-mid.png",
+                    "/images/image-low.png"
+                ]
+            }
+        ]
+    }
+}

@@ -45,8 +45,11 @@
     <div class="product-section">
         <div class="grid-container product-images-grid">
             <div class="grid-item image-options">
-                <picture>
-                    <img>
+                <picture class="image-option">
+                    <img class="image-option" src="https://images.unsplash.com/photo-1593642634367-d91a135587b5">
+                </picture>
+                <picture class="image-option">
+                    <img class="image-option" src="https://images.unsplash.com/photo-1593642634367-d91a135587b5">
                 </picture>
             </div>
             <div class="grid-item main-image">
@@ -56,7 +59,37 @@
             </div>
         </div>
         <div class="description-section">
-            <h1>Product Name</h1>
+            <h1 class="product-title">Product Name</h1>
+            <div class="essential-info">
+                <h2 id="price" class="price">$30.00</h2>
+                <div class="star-rating">
+                    <!--do 5 stars here, each with id (eg. star-1, star-2, etc.)-->
+                </div>
+            </div>
+            <div class="quantity-selector">
+                <!--styling for quantity selector-->
+            </div>
+            <div class="purchase-buttons">
+                <button class="btn" id="add-to-cart-button">Add to Cart</button>
+                <button class="btn afterpay" id="afterpay-button">
+                    <picture>
+                        <img src=""> <!--afterpay logo-->
+                    </picture>
+                </button>
+            </div>
+            <button class="expand">
+                <picture class="expand-icon">
+                    <img class="expand-icon" src="">
+                </picture>
+                <div class="expand-title">Description</div>
+            </button>
+            <div class="description collapsible">
+                <p class="text-content">Cute, simple and totally loveable this bunny is ageless.</p>
+                <p class="text-content">This rattle will appeal to every baby or toddler and will soon become a great companion. Made from 100% organic cotton, it is soft to the touch but very strong. Vegan and cruelty-free.</p>
+                <p class="text-content">Approximate size: 20 x 10 cm</p>
+                <p class="text-content">Pebble products are made entirely by hand with natural materials and as such there will be slight variations in size, colour and design in line with the unique nature of this product. Materials: 100% cotton POLY FILL</p>
+                <p class="text-content">All Pebble products are made in Bangladesh by the extremely talented and capable artisans at Hathay Bunano. Pebble toys help support families in rural Bangladesh by removing the need for economic migration to the cities and by providing women with flexible working opportunities which are close to their homes.</p>
+            </div>
         </div>
     </div>
 
