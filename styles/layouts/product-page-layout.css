@@ -211,10 +211,20 @@
     background: none;
     border: none;
     /* spacing */
-    margin: 0%;
+    margin: 0;
     padding: 0;
     /* typography */
     font-family: var(--font-primary);
+    color: var(--color-text-grey);
+}
+
+.btn.expand {
+    background: none;
+    border: none;
+    /* spacing */
+    margin: 0;
+    padding: 0;
+    /* typography */
     color: var(--color-text-grey);
 }
 
