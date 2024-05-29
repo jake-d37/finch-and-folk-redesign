@@ -1,20 +1,23 @@
 .cart-section {
+    /* spacing */
     padding-top: 1rem;
     padding-bottom: 2rem;
     padding-left: calc(((100% - min(max(80vw,32rem), 75rem)) / 2));
     padding-right: calc((100% - min(max(80vw,32rem), 75rem)) / 2);
 
-    opacity: 0;
+    /* display */
     display: flex;
     flex-direction: row;
+    overflow: hidden;
+
+    /* visuals */
     border: none;
     border-top: 1px solid var(--color-text-light);
     background-color: var(--color-secondary);
 
-    overflow: hidden;
-
-    /* starts with 0 width and expands on page opening */
-    height: 0rem;
+    /* animation */
+    height: 0rem; /* starts with 0 width and expands on page opening */
+    opacity: 0; /*so cart is not visible at start of animation*/
     animation: cart-drop 0.5s ease-in-out forwards;
 }
 
@@ -85,11 +88,10 @@
     font-family: var(--font-primary);
 }
 
-
+/* not a button anchor */
 .options > a {
     text-decoration: none;
 }
-
 .options > a:hover {
     text-decoration: underline;
 }
@@ -162,26 +164,32 @@
 .empty-message {
     /* will be displayed by javascript when all items are removed */
     display: none;
+    /* border */
     border: 1px solid var(--color-text-dark);
+    border-radius: 4px;
+    /* spacing */
     padding: 1rem;
     padding-top: 0.75rem;
     padding-bottom: 1.5rem;
 }
-
+/* override button style */
 .empty-message > .btn {
     background-color: var(--color-accent-1);
-    border-radius: 2rem;
+    border-radius: 8px;
 }
 
 .items-list {
+    /* border */
+    border: none;
+    border-right: 1px solid var(--color-text-dark);
+    /* position, size and space */
     width: 60%;
     display: flex;
     flex-direction: column;
-    border: none;
-    border-right: 1px solid var(--color-text-dark);
     padding-bottom: 2rem;
 }
 
+/* heading typography */
 .items-list > .heading {
     text-align: center;
     font-size: var(--text-xl);
@@ -190,23 +198,26 @@
 .items-list > .list-container {
     display: flex;
     flex-direction: column;
+    /* center aligns vertically */
     align-self: center;
     width: 80%;
 }
 
+/* headers for the columns */
 .items-list > .list-container > .properties {
     display: flex;
     flex-direction: row;
 }
-
+/* subtotal amount text */
 .items-list > .list-container > .subtotal {
     text-align: right;
 }
-
+/* checkout button under item list */
 .items-list > .list-container > .checkout-button {
     font-size: var(--text-md);
 }
 
+/* spacing and alignment of data in item cards */
 .quantity-column{
     text-align: right;
 }
@@ -232,25 +243,28 @@
     margin-left: 8.5rem;
 }
 
+/* item cars */
 .item-card {
     display: flex;
     border: 1px solid var(--color-text-dark);
-    border-radius: 3.5rem 3.5rem 0.5rem 0.5rem;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
 
     transition: all 1s ease-in-out;
 }
 
+/* makes a bigger gap between last item card and subtotal */
 .item-card:last-child{
     margin-bottom: 5rem;
 }
 
+/* image container in item card */
 .item-image {
+    /* ensures no stretching */
     object-fit: cover;
     margin: 0.75rem;
 }
-
+/* image in item card */
 .item-image > img {
     margin: 0;
     padding: 0%;
@@ -259,6 +273,7 @@
     box-shadow: 0px 0.2rem 1px rgba(0,0,0,0.05);
 }
 
+/* container of  remove button, quanitity text, and price text*/
 .item-card > .item-other {
     display: flex;
     flex-direction: column;
@@ -271,7 +286,7 @@
 .item-card > .item-other > * {
     width: 100%;
 }
-
+/* quanitity and price are horizontally beside each other */
 .item-card > .item-other > .horizontal {
     display: flex;
     flex-direction: row;
@@ -294,9 +309,11 @@
 
 .recommended-options {
     width: 100%;
+    /* will be scrollable in mobile view */
     overflow-x: visible;
 }
 
+/* "recommended" heading */
 .recommended-products > .heading {
     text-align: center;
     font-size: var(--text-md);
@@ -304,51 +321,57 @@
     margin-left: 2rem;
 }
 
+/* the anchors that lead to the product page of recommended products (basically the entire card)*/
 .btn.recommended-product {
+    /* override btn style */
     background: none;
     border: none;
+    /* display */
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    /* spacing */
     padding: 0%;
     margin-left: 2rem;
 }
 
+/* margins for cards in the list */
 .recommended-product + .recommended-product {
+    /* will be updated in mobile view */
     margin-top: 1rem;
 }
 
 .recommended-product > .recommended-image {
+    /* ensure no stretching */
     object-fit: cover;
 }
+/* sit fixed size for image */
 .recommended-product > .recommended-image > img {
     width: 10rem;
     height: 10rem;
 }
 
+/* name, price, rating */
 .recommended-product > .text-data {
     display: flex;
     flex-direction: column;
     margin-left: 1rem;
 }
-
 .recommended-product > .text-data > * {
     text-align: left;
 }
-
 .recommended-product > .text-data > .product-name {
     line-height: 90%;
     margin: 0;
     padding: 0;
 }
-
 .recommended-product > .text-data > .star-rating {
     display: flex;
     justify-content: flex-start;
     width: 100%;
     margin: 0;
 }
-
+/* stars overlap each other because I thought that looked cool */
 .recommended-product > .text-data > .star-rating > * + * {
     margin-left: -1rem;
 }
@@ -356,34 +379,39 @@
 
   /*adapts to mobile*/
 @media screen and (max-width: 768px){
+    /* item and recommended sections are beneath eachother, not beside anymore */
     .main-content-section {
         flex-direction: column;
         justify-content: flex-start;
     }
 
+    /* change the border to suit the position change */
     .items-list {
         border: none;
         border-bottom: 1px solid var(--color-text-dark);
         width: 100%;
     }
+    /* ensure the section covers the width of the container, not the smaller portion like in desktop mode */
     .recommended-products {
         width: 100%;
     }
+    /* adaptive change to mobile */
     .recommended-options {
         width: 100%;
         display: flex;
         flex-direction: row;
+        /* ensures they do overflow the container so its scorllable */
         flex-wrap: nowrap;
         overflow-x: hidden;
     }
     .btn.recommended-product {
         flex-direction: column;
-        width: 10rem; /* Adjust width as needed */
     }
     .recommended-product + .recommended-product {
         margin-top: 0;
         margin-left: 1rem;
     }
+    /* margin is irrelevant with adapted position */
     .recommended-product > .text-data {
         margin-left: 0rem;
     }
