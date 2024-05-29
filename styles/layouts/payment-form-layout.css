@@ -1,0 +1,222 @@
+.blur-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.0); /* Adjust the last value (alpha) to control the transparency */
+    backdrop-filter: blur(0px); /* Applies the blur effect */
+    z-index: 10; /* Ensures it's above other content */
+
+    animation: blur-in 0.5s ease-in-out forwards;
+}
+
+@keyframes blur-in {
+    from {
+        background-color: rgba(0, 0, 0, 0.0);
+        backdrop-filter: blur(0px);
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(8px);
+    }
+}
+
+.payment-form {
+    display: none;
+    border-radius: 2rem;
+    background-color: linear-gradient(to bottom, #FFFFF0 20%, #FFF6C8 90%);
+    background-color: var(--color-primary-var-2);
+    width: 80%;
+    z-index: 15;
+
+    position: absolute;
+    top: calc(50% + 50px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 50rem; /* This sets the maximum width to 50rem */
+
+    padding: 2rem;
+
+    flex-direction: column;
+}
+
+.payment-form > .details {
+    margin: 0.5rem 0 2rem 0;
+}
+
+.details-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+}
+
+.details-cluster {
+    display: flex;
+    flex-direction: row;
+}
+
+.cluster-1-left {
+    width: 30%;
+}
+
+.cluster-1-right {
+    width: 70%;
+}
+
+.cluster-2-left {
+    width: 70%;
+}
+
+.cluster-2-right {
+    width: 30%;
+}
+
+.details-cluster > .details-group + .details-group {
+    margin-left: 0.5rem;
+}
+
+.details-input {
+    background-color: var(--color-primary);
+    border-radius: 4px;
+    height: 2rem;
+    border: 1px solid var(--color-text-dark);
+    padding: 0 0.5rem;
+    font-family: var(--font-primary);
+    font-size: var(--text-base-size);
+    vertical-align: middle;
+    margin: 0;
+
+    transition: all 0.2s ease-out;
+}
+
+.payment-form > .details-submit {
+    border-radius: 8px;
+}
+
+.form-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-head > .cancel-button {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cancel-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* override current border to signal feedback to user */
+/* class will be added to input tag by javascript */
+.invalid-input {
+    border: 1px solid var(--color-urgent);
+    box-shadow: 0px 0.1em 5px var(--color-urgent);
+}
+
+/* payment confirmed pop-up */
+.payment-confirmed-overlay {
+    padding-top: 10rem;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0%;
+    opacity: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    background-color: var(--color-secondary); 
+    /* Ensures it's above the payment form */
+    z-index: 30; 
+
+    /* replicate the "quick" easing from figma */
+    animation: pull-up 0.4s ease-out forwards;
+}
+
+@keyframes pull-up {
+    from {
+        height: 0%;
+        opacity: 0;
+    }
+
+    to {
+        height: 100%;
+        opacity: 1;
+    }
+}
+
+.payment-confirmed-overlay > .heading {
+    max-width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.celebration-image-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+.celebration-image {
+    width: 10rem;
+    height: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.payment-confirmed-overlay > .cta-button {
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* confetti! */
+.confetti-container {
+    display: none;
+    width: 100%;
+    position: fixed;
+}
+
+.confetti {
+    position: absolute;
+    width: 1rem;
+    height: 2rem;
+    background-color: #ffdd00; /* Yellow */
+    animation: confetti-fall 10s linear infinite;
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(-100vh) rotate(0deg);
+    }
+    100% {
+        transform: translateY(200vh) rotate(360deg);
+    }
+}
+
+.confetti:nth-child(2n) {
+    background-color: #ff3860; /* Pink */
+}
+
+.confetti:nth-child(3n) {
+    background-color: #009dff; /* Blue */
+}
+
+/*adapts to mobile*/
+@media screen and (max-width: 768px){
+    .payment-form {
+        top: 50%;
+    }
+
+    .details-input {
+        height: 3rem;
+        padding: 0 0.5rem;
+        font-size: var(--text-md);
+    }
+}

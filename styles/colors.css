@@ -19,9 +19,11 @@
 
     /*variants*/
     --color-primary-var-1: #eaeacc;
+    --color-primary-var-2: #FFF6C8;
 
     /*gradients*/
     --gradient-accent-one-to-transparent: linear-gradient(#d5a08645, #D5A086 70%);
     --gradient-accent-two-to-transparent: linear-gradient(#9fc8c045, #9FC8C0 70%);
+    --gradient-payment-form: linear-gradient(to bottom, #FFFFF0 20%, #FFF6C8 90%);
     /*add later*/ 
 }

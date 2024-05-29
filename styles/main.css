@@ -63,7 +63,16 @@ input[type="number"], button {
     -moz-appearance: none; /* Remove default styles in Firefox */
     appearance: none;
     outline: none;
-    background: none;
-    border-radius: 0;
-    box-shadow: none;
+}
+
+/* Hide the spinner arrows */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove the increment and decrement arrows for Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }

@@ -3,6 +3,8 @@
 @import url('/styles/layouts/landing-page-layout.css');
 @import url('/styles/layouts/results-page-layout.css');
 @import url('/styles/layouts/product-page-layout.css');
+@import url('/styles/layouts/cart-page-layout.css');
+@import url('/styles/layouts/payment-form-layout.css');
 
 .grid-container {
     display: grid;

@@ -5,7 +5,7 @@
     /*should be fixed to the top of the screen*/
     position: fixed;
     /*ensures its rendered on top of other things*/
-    z-index: 10;
+    z-index: 999;
 
     /*take up full width of screen with no gaps*/
     top: 0%;

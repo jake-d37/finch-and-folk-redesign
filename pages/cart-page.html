@@ -37,6 +37,331 @@
             </a>
         </div>
     </div>
+    
+    <!-- cart menu -->
+    <div class="cart-section page-top-border">
+        <!-- column 1 -->
+        <div class="column column-left">
+            <!-- heading -->
+            <h1 class = "heading page-heading invert-color">Cart</h1>
+            <!-- options -->
+            <div class="options">
+                <!-- apply coupon -->
+                <a href="" class="invert-color">Apply Coupon</a>
+                <!-- send as gift checkbox -->
+                <label class="checkbox-container invert-color">Send as gift
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+        <!-- column 2 -->
+        <div class="column column-middle">
+            <!-- items count -->
+            <p id="item-count" class="item-count text-content invert-color">3 Items</p>
+            <p id="cart-total" class="cart-total text-content invert-color">$113.47</p>
+            <!-- total price -->
+        </div>
+        <!-- column 3 -->
+        <div class="column column-right">
+            <!-- checkout button -->
+            <button class="btn cta-button" onclick="openPaymentForm()">Checkout</button>
+        </div>
+    </div>
+
+    <div class = "border-container">
+        <img class = "border top-border" src = "/images/branding-images/border-decoration.png">
+    </div>
+
+    <!-- page main content -->
+    <div class="main-content-section">
+        <!-- items list -->
+        <div class="items-list">
+            <!-- header -->
+            <h1 class="heading page-heading">Your Items</h1>
+            <!-- list -->
+            <div class="list-container">
+                <!-- properties -->
+                <div class="properties">
+                    <p class="text-content column-heading product-column">Product</p>
+                    <p class="text-content column-heading quantity-column">Quantity</p>
+                    <p class="text-content column-heading price-column">Price</p>
+                </div>
+                <!-- message when no items -->
+                <div class="empty-message" id="empty-message">
+                    <p class="text-content">There are no items in your cart :(</p>
+                    <a class="btn" href="/pages/results-page.html">Find something special</a>
+                </div>
+                <!-- item 1 -->
+                <div class="item-card" id="item-card-1">
+                    <!-- image -->
+                    <picture class="item-image">
+                        <img class="archway-image item-image" src="/images/product-images/crochet-bunny/image-1-high.jpg">
+                    </picture>
+                    <!-- product name -->
+                    <p class="text-content product-column">Crochet Bunny</p>
+                    <!-- other -->
+                    <div class="item-other">
+                        <div class="horizontal">
+                            <!-- quantity -->
+                            <p class="text-content quantity-column">1</p>
+                            <!-- price -->
+                            <p class="text-content price-column">$30.00</p>
+                        </div>
+                        <!-- remove button -->
+                        <button class="btn" onclick="removeItemCard(1)">Remove</button>
+                    </div>
+                </div>
+                <!-- item 2 -->
+                <div class="item-card" id="item-card-2">
+                    <!-- image -->
+                    <picture class="item-image">
+                        <img class="archway-image item-image" src="/images/product-images/crochet-bunny/image-1-high.jpg">
+                    </picture>
+                    <!-- product name -->
+                    <p class="text-content product-column">Crochet Bunny</p>
+                    <!-- other -->
+                    <div class="item-other">
+                        <div class="horizontal">
+                            <!-- quantity -->
+                            <p class="text-content quantity-column">1</p>
+                            <!-- price -->
+                            <p class="text-content price-column">$30.00</p>
+                        </div>
+                        <!-- remove button -->
+                        <button class="btn" onclick="removeItemCard(2)">Remove</button>
+                    </div>
+                </div>
+                <!-- item 3 -->
+                <div class="item-card" id="item-card-3">
+                    <!-- image -->
+                    <picture class="item-image">
+                        <img class="archway-image item-image" src="/images/product-images/crochet-bunny/image-1-high.jpg">
+                    </picture>
+                    <!-- product name -->
+                    <p class="text-content product-column">Crochet Bunny</p>
+                    <!-- other -->
+                    <div class="item-other">
+                        <div class="horizontal">
+                            <!-- quantity -->
+                            <p class="text-content quantity-column">1</p>
+                            <!-- price -->
+                            <p class="text-content price-column">$30.00</p>
+                        </div>
+                        <!-- remove button -->
+                        <button class="btn" onclick="removeItemCard(3)">Remove</button>
+                    </div>
+                </div>
+                <!-- subtotal -->
+                <p class="text-content subtotal" id="subtotal">Subtotal:   $300.00</p>
+                <!-- checkout button -->
+                <button class="btn checkout-button" onclick="openPaymentForm()">Checkout</button>
+            </div>
+        </div>
+        <!-- recommended products -->
+        <div class="recommended-products">
+            <!-- heading -->
+            <h1 class="heading page-heading">Recommended</h1>
+            <div class="recommended-options">
+                <!-- product button 1 -->
+                <a class="btn recommended-product" href="/pages/product-page.html">
+                    <picture class="recommended-image">
+                        <img src="/images/product-images/crochet-bunny/image-2-high.jpg">
+                    </picture>
+                    <div class="text-data">
+                        <p class="text-content product-name">Crochet Bunny</p>
+                        <p class="text-content product-price">$30.00</p>
+                        <div class="star-rating">
+                            <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                                <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                            </svg>
+                            <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                                <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                            </svg>
+                            <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                                <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                            </svg>
+                            <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                                <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                            </svg>
+                            <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                                <path d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- product button 2 -->
+                <a class="btn recommended-product" href="/pages/product-page.html">
+                    <picture class="recommended-image">
+                        <img src="/images/product-images/crochet-bunny/image-2-high.jpg">
+                    </picture>
+                    <div class="text-data">
+                        <p class="text-content product-name">Crochet Bunny</p>
+                        <p class="text-content product-price">$30.00</p>
+                        <div class="star-rating">
+                            <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                                <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                            </svg>
+                            <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                                <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                            </svg>
+                            <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                                <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                            </svg>
+                            <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                                <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                            </svg>
+                            <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                                <path d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- product button 3 -->
+                <a class="btn recommended-product" href="/pages/product-page.html">
+                    <picture class="recommended-image">
+                        <img src="/images/product-images/crochet-bunny/image-2-high.jpg">
+                    </picture>
+                    <div class="text-data">
+                        <p class="text-content product-name">Crochet Bunny</p>
+                        <p class="text-content product-price">$30.00</p>
+                        <div class="star-rating">
+                            <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                                <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                            </svg>
+                            <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                                <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                            </svg>
+                            <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                                <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                            </svg>
+                            <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                                <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                            </svg>
+                            <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                                <path d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- product button 4 -->
+                <a class="btn recommended-product" href="/pages/product-page.html">
+                    <picture class="recommended-image">
+                        <img src="/images/product-images/crochet-bunny/image-2-high.jpg">
+                    </picture>
+                    <div class="text-data">
+                        <p class="text-content product-name">Crochet Bunny</p>
+                        <p class="text-content product-price">$30.00</p>
+                        <div class="star-rating">
+                            <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                                <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                            </svg>
+                            <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                                <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                            </svg>
+                            <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                                <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                            </svg>
+                            <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                                <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                            </svg>
+                            <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                                <path d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- overlay blur -->
+    <div class="blur-overlay" id="blur-overlay"></div>
+
+    <!-- payment form -->
+    <form class="payment-form" id="payment-form" onsubmit="return confirmPayment(event)">
+        <div class="form-head">
+            <label class="heading">Payment Details</label>
+            <a class="btn cancel-button" href="/pages/cart-page.html">
+                <picture>
+                    <img class="cancel-icon" src="/images/icons/cancel-icon.svg">
+                </picture>
+            </a>
+        </div>
+
+        <div class="details">
+            <div class="details-group">
+                <label class="text-content" for="name-on-card">Name on card</label>
+                <input id="name-on-card" class="details-input" name="full-name">
+            </div>
+            <div class="details-group">
+                <label class="text-content" for="card-number">Card number</label>
+                <input id="card-number" class="details-input" name="card-number" type="number">
+            </div>
+
+            <div class="details-cluster cluster-1">
+                <div class="details-group cluster-1-left">
+                    <label class="text-content" for="cvv-number">CVV</label>
+                    <input id="cvv-number" class="details-input" name="cvv" type="number">
+                </div>
+                <div class="details-group cluster-1-right">
+                    <label class="text-content" for="expiry-date">Expiry</label>
+                    <input id="expiry-date" class="details-input" name="expiry-date" type="month">
+                </div>
+            </div>
+
+            <div class="details-group">
+                <label class="text-content" for="billing-address">Billing Address</label>
+                <input id="billing-address" class="details-input" name="address">
+            </div>
+
+            <div class="details-cluster cluster-2">
+                <div class="details-group cluster-2-left">
+                    <label class="text-content" for="cvv-number">State</label>
+                    <input id="state-id" class="details-input" name="state">
+                </div>
+                <div class="details-group cluster-2-right">
+                    <label class="text-content" for="postcode">Postcode</label>
+                    <input id="postcode" class="details-input" name="postcode" type="number">
+                </div>
+            </div>
+        </div>
+
+        <button class="btn details-submit" type="submit"><p class="heading invert-color">Checkout</p></button>
+    </form>
+
+    <!-- payment confirmed prompt -->
+    <div class="payment-confirmed-overlay" id="payment-confirmed-overlay">
+        <h1 class="heading invert-color">Payment Confirmed</h1>
+        <picture class="celebration-image-container">
+            <img class="celebration-image" src="/images/component-images/party-popper.svg">
+        </picture>
+        <a href="/index.html" class="btn cta-button">Find more</a>
+
+        <!-- confetti! -->
+        <div class="confetti-container" id="confetti-container">
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+        </div>
+    </div>
+
+    <div class = "border-container">
+        <img class = "border bottom-border" src = "/images/branding-images/border-decoration.png">
+    </div>
 
     <!-- footer -->
     <div class="footer">
@@ -57,5 +382,8 @@
             </div>
         </div>
     </div>
+
+    <!-- attach behaviour script -->
+    <script src="/scripts/cart-page-behavior.js"></script>
 </body>
 </html>
