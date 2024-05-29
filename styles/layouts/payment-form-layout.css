@@ -1,17 +1,21 @@
 .blur-overlay {
+    /* will be turned on via javascript */
     display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.0); /* Adjust the last value (alpha) to control the transparency */
-    backdrop-filter: blur(0px); /* Applies the blur effect */
-    z-index: 10; /* Ensures it's above other content */
+    background-color: rgba(0, 0, 0, 0.0);
+    /* Applies the blur effect */
+    backdrop-filter: blur(0px); 
+    /* Ensures it's above other content */
+    z-index: 10; 
 
     animation: blur-in 0.5s ease-in-out forwards;
 }
 
+/* turn on blur effect */
 @keyframes blur-in {
     from {
         background-color: rgba(0, 0, 0, 0.0);
@@ -23,91 +27,98 @@
     }
 }
 
+/* payment form */
 .payment-form {
+    /* will be turned on from javascript */
     display: none;
-    border-radius: 2rem;
+    flex-direction: column;
+    /* visuals */
+    /* linear gradient bugging out, fix later */
     background-color: linear-gradient(to bottom, #FFFFF0 20%, #FFF6C8 90%);
     background-color: var(--color-primary-var-2);
-    width: 80%;
-    z-index: 15;
+    border-radius: 2rem;
 
+    /* positioning */
     position: absolute;
     top: calc(50% + 50px);
     left: 50%;
+    z-index: 15; /*ensure its above the blur overlay*/
     transform: translate(-50%, -50%);
-    max-width: 50rem; /* This sets the maximum width to 50rem */
 
+    /* sizing and spacing */
+    width: 80%;
+    max-width: 50rem;
     padding: 2rem;
-
-    flex-direction: column;
 }
-
+/* separate the input from the header and submit button */
 .payment-form > .details {
     margin: 0.5rem 0 2rem 0;
 }
-
+/* collections of label and input */
 .details-group {
     display: flex;
     flex-direction: column;
     margin-top: 0.5rem;
 }
-
+/* horizontal collections of details groups */
 .details-cluster {
     display: flex;
     flex-direction: row;
 }
-
+/* particular clusters */
 .cluster-1-left {
     width: 30%;
 }
-
 .cluster-1-right {
     width: 70%;
 }
-
 .cluster-2-left {
     width: 70%;
 }
-
 .cluster-2-right {
     width: 30%;
 }
-
+/* ensure gap between groups in clusters */
 .details-cluster > .details-group + .details-group {
     margin-left: 0.5rem;
 }
 
+/* input tags in the payment form */
 .details-input {
+    /* visual style */
     background-color: var(--color-primary);
-    border-radius: 4px;
-    height: 2rem;
     border: 1px solid var(--color-text-dark);
+    border-radius: 4px;
+    /* sizing */
+    height: 2rem;
+    /* spacing */
     padding: 0 0.5rem;
+    margin: 0;
+    /* typography */
     font-family: var(--font-primary);
     font-size: var(--text-base-size);
     vertical-align: middle;
-    margin: 0;
-
+    /* transition (for when invalid) */
     transition: all 0.2s ease-out;
 }
-
+/* submit button */
 .payment-form > .details-submit {
     border-radius: 8px;
 }
-
+/* header on payment form and cancel button */
 .form-head {
     display: flex;
     flex-direction: row;
+    /* ensure they are shown at each end */
     justify-content: space-between;
 }
-
+/* cancel button, override btn style */
 .form-head > .cancel-button {
     background: none;
     border: none;
     margin: 0;
     padding: 0;
 }
-
 .cancel-icon {
     width: 2rem;
     height: 2rem;
@@ -122,30 +133,31 @@
 
 /* payment confirmed pop-up */
 .payment-confirmed-overlay {
+    /* spacing */
     padding-top: 10rem;
+    /* display */
     display: none;
     flex-direction: column;
+    background-color: var(--color-secondary); 
+    /* positioning */
     position: fixed;
     bottom: 0%;
-    opacity: 0;
     left: 0;
-    width: 100%;
-    height: 0%;
     overflow: hidden;
-    background-color: var(--color-secondary); 
-    /* Ensures it's above the payment form */
-    z-index: 30; 
-
-    /* replicate the "quick" easing from figma */
+    z-index: 30; /* Ensures it's above the payment form */
+    /* sizing */
+    width: 100%;
+    height: 0%; /*aniamtion will change this*/
+    /* animation */
+    opacity: 0;
     animation: pull-up 0.4s ease-out forwards;
 }
-
+/* animation for payment confirmation */
 @keyframes pull-up {
     from {
         height: 0%;
         opacity: 0;
     }
-
     to {
         height: 100%;
         opacity: 1;
@@ -155,23 +167,27 @@
 .payment-confirmed-overlay > .heading {
     max-width: 80%;
     text-align: center;
+    /* center element */
     margin-left: auto;
     margin-right: auto;
 }
 
 .celebration-image-container {
+    /* center element */
     margin-left: auto;
     margin-right: auto;
 }
 .celebration-image {
     width: 10rem;
     height: 10rem;
+    /* center element */
     margin-left: auto;
     margin-right: auto;
 }
 
 .payment-confirmed-overlay > .cta-button {
     margin-top: 3rem;
+    /* center element */
     margin-left: auto;
     margin-right: auto;
 }
@@ -210,10 +226,11 @@
 
 /*adapts to mobile*/
 @media screen and (max-width: 768px){
+    /* so its not so far down the screen */
     .payment-form {
         top: 50%;
     }
-
+    /* so its easier to type on smaller screens */
     .details-input {
         height: 3rem;
         padding: 0 0.5rem;

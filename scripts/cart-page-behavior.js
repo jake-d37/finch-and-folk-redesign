@@ -1,5 +1,6 @@
 //handle removing items from item list
-let openItems = 3;
+//this array takes note of what items are currently in the list
+//since there is no backend, this is hardcoded in for now
 let items = [
     {
         index: 1,
