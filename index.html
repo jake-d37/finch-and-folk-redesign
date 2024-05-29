@@ -133,7 +133,7 @@
                     </div>
                 </div>
                 <p class="text-content">Subscribe to our newsletter for exclusive discounts and news <b>+ 10% off your first order</b></p>
-                <form action="" class="subscribe-form">
+                <form onsubmit="return confirmSubscription(event)" class="subscribe-form">
                     <div class="input-container">
                         <label for="name-id" class="text-label">Name</label>
                         <input id="name-id" class="text-input" placeholder="John Johnson">
@@ -146,7 +146,7 @@
                     
                     <button class="btn invert-color" type="submit">Subscribe</button>
                 </form>
-                <p class="thank-you-message text-content">Thank you for subscribing!</p>
+                <p class="thank-you-message text-content" id="thank-you-message">Thank you for subscribing! :)</p>
             </div>
         </div>
     </div>
@@ -175,5 +175,8 @@
             </div>
         </div>
     </div>
+
+    <!-- attach behaviour script -->
+    <script src="/scripts/landing-page-behavior.js"></script>
 </body>
 </html>

@@ -97,13 +97,14 @@ function openPaymentForm() {
 
 //valid input checking on payment form
 document.addEventListener("DOMContentLoaded", function() {
-    const cvvInput = document.getElementById('cvv-number');
-    const postcodeInput = document.getElementById('postcode');
+    const cvvInput = document.getElementById("cvv-number");
+    const postcodeInput = document.getElementById("postcode");
+    const cardNumberInput = document.getElementById("card-number");
 
     //every time value changes, check if it is valid answer
     cvvInput.addEventListener('input', function() {
         const value = cvvInput.value;
-        if (hasNCharacters(value, 3)) {
+        if (hasNCharacters(value, 3) || hasNCharacters(value, 0)) {
             cvvInput.classList.remove("invalid-input");
         } else {
             cvvInput.classList.add("invalid-input");
@@ -113,10 +114,20 @@ document.addEventListener("DOMContentLoaded", function() {
     //every time value changes, check if it is valid answer
     postcodeInput.addEventListener('input', function() {
         const value = postcodeInput.value;
-        if (hasNCharacters(value, 4)) {
+        if (hasNCharacters(value, 4) || hasNCharacters(value, 0)) {
             postcodeInput.classList.remove("invalid-input");
         } else {
             postcodeInput.classList.add("invalid-input");
+        }
+    });
+
+    //every time value changes, check if it is valid answer
+    cardNumberInput.addEventListener('input', function() {
+        const value = cardNumberInput.value;
+        if (hasNCharacters(value, 16) || hasNCharacters(value, 0)) {
+            cardNumberInput.classList.remove("invalid-input");
+        } else {
+            cardNumberInput.classList.add("invalid-input");
         }
     });
 

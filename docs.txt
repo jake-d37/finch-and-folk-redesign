@@ -1,42 +1,18 @@
-**COMPONENTS TO INCLUDE**
-
--DONE Page Header
--DONE Subheading 
--DONE F&F Logo
--DONE CTA Button
--DONE Category button (normal border, top right border, top left border)
--DONE Border Decoration
--DONE Scrolling Header
--DONE Icon button (eg. hamburger, filter, cart, favourites)
--DONE Navbar/Header
-    -DONE Logo 2
-    -DONE Searchbar
-- Product Card
-    - Add to cart shortcut
-    - Favourite Button
-    - Image
-    - Tags
--DONE Button (dark, invert)
--DONE Text field (dark, invert)
-- Recommended box 
-    - stars
-- Your Item box
-- Cart dropdown
-
 **CHANGES MADE**
-Logo changed to have baby instead of ampersand
-changed heading of landing page to have ampersand
-changed the mobile view to have the same header as the desktop version
-animation of category buttons changed to be consistent with other buttons
-side borders removed as it created sizing issues
-labels added to the form for better ux
-exit buttons added to payment form
-added confetti to payment confirmation for ux
+- Logo changed to have baby instead of ampersand
+- changed heading of landing page to have ampersand
+- changed the mobile view to have the same header as the desktop version
+- animation of category buttons changed to be consistent with other buttons
+- some side borders removed as it created sizing issues
+- labels added to the newsletter form for better ux
+- exit buttons added to payment form for easy reversal of actions
+- added confetti to payment confirmation for ux
 
 **REMINDERS**
 - implement all the images
-- have different LODs of images in picture Tags
+    - have different LODs of images in picture Tags
 - implement anchor links
+    - social media links
 - if time, add animations to items list
 - if time, fix easing of animation in payment confirmation page
 - make sure the prices in the DOM match the defaults in JS

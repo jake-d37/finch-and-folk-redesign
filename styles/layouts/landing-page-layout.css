@@ -235,6 +235,9 @@
 .thank-you-message {
     /*is displayed when form is submitted*/
     display: none;
+    /* center the text */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*award image*/
