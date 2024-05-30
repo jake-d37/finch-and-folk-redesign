@@ -3,38 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.8">
-    <!-- base tag to correct links for publishing on github -->
-    <base href="https://jake-d37.github.io/finch-and-folk-redesign/">
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/qaligo" rel="stylesheet">
     <!--styling-->
-    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
     <title>Cart</title>
-    <link rel="icon" href="/images/icons/logo-icon.svg" type="image/svg+xml">
+    <link rel="icon" href="../images/icons/logo-icon.svg" type="image/svg+xml">
 </head>
 <body>
     <!-- header -->
     <div class="header">
         <div class="nav-group nav-left">
             <a href="#" class="btn icon-button">
-                <img class="icon-image" src="/images/icons/hamburger-icon.svg" alt="Find by Category">
+                <img class="icon-image" src="../images/icons/hamburger-icon.svg" alt="Find by Category">
             </a>
-            <a href="/index.html" class="btn icon-button">
-                <img class="icon-image" src="/images/icons/logo-icon.svg" alt="Home">
+            <a href="../index.html" class="btn icon-button">
+                <img class="icon-image" src="../images/icons/logo-icon.svg" alt="Home">
             </a>
         </div>
-        <form action="/pages/results-page.html" method="get" class="search-bar-container">
+        <form action="results-page.html" method="get" class="search-bar-container">
             <input type="text" name="search" id="search" class="search-bar" placeholder="Find products">
         </form>
         <div class="nav-group nav-right">
             <a href="#" class="btn icon-button">
-                <img class="icon-image" src="/images/icons/favourites-icon.svg" alt="Saved for Later">
+                <img class="icon-image" src="../images/icons/favourites-icon.svg" alt="Saved for Later">
             </a>
-            <a href="/pages/cart-page.html" class="btn icon-button">
-                <img class="icon-image" src="/images/icons/shop-icon.svg" alt="View Cart">
+            <a href="cart-page.html" class="btn icon-button">
+                <img class="icon-image" src="../images/icons/shop-icon.svg" alt="View Cart">
             </a>
         </div>
     </div>
@@ -72,7 +70,7 @@
     </div>
 
     <div class = "border-container">
-        <img class = "border top-border" src = "/images/branding-images/border-decoration.png">
+        <img class = "border top-border" src = "../images/branding-images/border-decoration.png">
     </div>
 
     <!-- page main content -->
@@ -92,7 +90,7 @@
                 <!-- message when no items -->
                 <div class="empty-message" id="empty-message">
                     <p class="text-content">There are no items in your cart :(</p>
-                    <a class="btn" href="/pages/results-page.html">Find something special</a>
+                    <a class="btn" href="results-page.html">Find something special</a>
                 </div>
                 <!-- item 1 -->
                 <div class="item-card" id="item-card-1">
@@ -100,8 +98,8 @@
                     <picture class="item-image">
                         <img 
                             class="archway-image item-image"
-                            src="/images/product-images/crochet-bunny/image-1-low.jpg" 
-                            srcset="/images/product-images/crochet-bunny/image-1-low.jpg 2x, /images/product-images/crochet-bunny/image-1-low.jpg 1x" 
+                            src="../images/product-images/crochet-bunny/image-1-low.jpg" 
+                            srcset="../images/product-images/crochet-bunny/image-1-low.jpg 2x, ../images/product-images/crochet-bunny/image-1-low.jpg 1x" 
                             alt="Crochet Bunny Item">
                     </picture>
                     <!-- product name -->
@@ -124,8 +122,8 @@
                     <picture class="item-image">
                         <img 
                             class="archway-image item-image"
-                            src="/images/product-images/soft-block/image-low.jpg" 
-                            srcset="/images/product-images/soft-block/image-high.webp 2x, /images/product-images/soft-block/image-low.jpg 1x" 
+                            src="../images/product-images/soft-block/image-low.jpg" 
+                            srcset="../images/product-images/soft-block/image-high.webp 2x, ../images/product-images/soft-block/image-low.jpg 1x" 
                             alt="Soft Blocks Item">
                     </picture>
                     <!-- product name -->
@@ -148,8 +146,8 @@
                     <picture class="item-image">
                         <img 
                             class="archway-image item-image"
-                            src="/images/product-images/christmas-blocks/image-low.jpg" 
-                            srcset="/images/product-images/christmas-blocks/image-high.jpg 2x, /images/product-images/christmas-blocks/image-low.jpg 1x" 
+                            src="../images/product-images/christmas-blocks/image-low.jpg" 
+                            srcset="../images/product-images/christmas-blocks/image-high.jpg 2x, ../images/product-images/christmas-blocks/image-low.jpg 1x" 
                             alt="Christmas Blocks Item">
                     </picture>
                     <!-- product name -->
@@ -178,11 +176,11 @@
             <h1 class="heading page-heading">Recommended</h1>
             <div class="recommended-options">
                 <!-- product button 1 -->
-                <a class="btn recommended-product" href="/pages/product-page.html">
+                <a class="btn recommended-product" href="product-page.html">
                     <picture class="recommended-image">
                         <img 
-                            src="/images/product-images/crochet-bunny/image-2-low.jpg" 
-                            srcset="/images/product-images/crochet-bunny/image-2-high 2x, /images/product-images/crochet-bunny/image-2-low.jpg 1x" 
+                            src="../images/product-images/crochet-bunny/image-2-low.jpg" 
+                            srcset="../images/product-images/crochet-bunny/image-2-high 2x, ../images/product-images/crochet-bunny/image-2-low.jpg 1x" 
                             alt="Recommended Crochet Bunny">
                     </picture>
                     <div class="text-data">
@@ -208,11 +206,11 @@
                     </div>
                 </a>
                 <!-- product button 2 -->
-                <a class="btn recommended-product" href="/pages/product-page.html">
+                <a class="btn recommended-product" href="product-page.html">
                     <picture class="recommended-image">
                         <img 
-                            src="/images/product-images/animals-watercolor/image-low.jpg" 
-                            srcset="/images/product-images/animals-watercolor/image-high.jpg 2x, /images/product-images/animals-watercolor/image-low.jpg 1x" 
+                            src="../images/product-images/animals-watercolor/image-low.jpg" 
+                            srcset="../images/product-images/animals-watercolor/image-high.jpg 2x, ../images/product-images/animals-watercolor/image-low.jpg 1x" 
                             alt="Recommended Aussie Animals Watercolour">
                     </picture>
                     <div class="text-data">
@@ -238,11 +236,11 @@
                     </div>
                 </a>
                 <!-- product button 3 -->
-                <a class="btn recommended-product" href="/pages/product-page.html">
+                <a class="btn recommended-product" href="product-page.html">
                     <picture class="recommended-image">
                         <img 
-                            src="/images/product-images/bear-bean/image-low.jpg" 
-                            srcset="/images/product-images/bear-bean/image-high.webp 2x, /images/product-images/bear-bean/image-low.jpg 1x" 
+                            src="../images/product-images/bear-bean/image-low.jpg" 
+                            srcset="../images/product-images/bear-bean/image-high.webp 2x, ../images/product-images/bear-bean/image-low.jpg 1x" 
                             alt="Recommended Bear Bean Toy">
                     </picture>
                     <div class="text-data">
@@ -268,11 +266,11 @@
                     </div>
                 </a>
                 <!-- product button 4 -->
-                <a class="btn recommended-product" href="/pages/product-page.html">
+                <a class="btn recommended-product" href="product-page.html">
                     <picture class="recommended-image">
                         <img 
-                            src="/images/product-images/soft-block/image-low.jpg" 
-                            srcset="/images/product-images/soft-block/image-high.webp 2x, /images/product-images/soft-block/image-low.jpg 1x" 
+                            src="../images/product-images/soft-block/image-low.jpg" 
+                            srcset="../images/product-images/soft-block/image-high.webp 2x, ../images/product-images/soft-block/image-low.jpg 1x" 
                             alt="Recommended Soft Block Toy">
                     </picture>
                     <div class="text-data">
@@ -308,9 +306,9 @@
     <form class="payment-form" id="payment-form" onsubmit="return confirmPayment(event)">
         <div class="form-head">
             <label class="heading">Payment Details</label>
-            <a class="btn cancel-button" href="/pages/cart-page.html">
+            <a class="btn cancel-button" href="cart-page.html">
                 <picture>
-                    <img class="cancel-icon" src="/images/icons/cancel-icon.svg">
+                    <img class="cancel-icon" src="../images/icons/cancel-icon.svg">
                 </picture>
             </a>
         </div>
@@ -360,9 +358,9 @@
     <div class="payment-confirmed-overlay" id="payment-confirmed-overlay">
         <h1 class="heading invert-color">Payment Confirmed</h1>
         <picture class="celebration-image-container">
-            <img class="celebration-image" src="/images/component-images/party-popper.svg">
+            <img class="celebration-image" src="../images/component-images/party-popper.svg">
         </picture>
-        <a href="/index.html" class="btn cta-button">Find more</a>
+        <a href="../index.html" class="btn cta-button">Find more</a>
 
         <!-- confetti! -->
         <div class="confetti-container" id="confetti-container">
@@ -386,30 +384,30 @@
     </div>
 
     <div class = "border-container">
-        <img class = "border bottom-border" src = "/images/branding-images/border-decoration.png">
+        <img class = "border bottom-border" src = "../images/branding-images/border-decoration.png">
     </div>
 
     <!-- footer -->
     <div class="footer">
         <div class="footer-logo-container">
             <picture class="footer-logo">
-                <img class="footer-logo" src = "/images/branding-images/logo-wide.png">
+                <img class="footer-logo" src = "../images/branding-images/logo-wide.png">
             </picture>
         </div>
         <div class="footer-options">
             <p class="fine-print">2024 Finch & Folk | <a href="https://finchandfolk.com.au/policies/privacy-policy" target="_blank" class="fine-print">Privacy Policy</a> | <a href="https://finchandfolk.com.au/policies/terms-of-service" target="_blank" class="fine-print">Terms</a></p>
             <div class="socials">
                 <a href="https://www.facebook.com/finchandfolk" target="_blank" class="btn icon-button">
-                    <img class="icon-image" src="/images/icons/facebook-icon.svg" alt="Facebook">
+                    <img class="icon-image" src="../images/icons/facebook-icon.svg" alt="Facebook">
                 </a>
                 <a href="https://www.instagram.com/finchandfolk" target="_blank" class="btn icon-button">
-                    <img class="icon-image" src="/images/icons/instagram-icon.svg" alt="Instagram">
+                    <img class="icon-image" src="../images/icons/instagram-icon.svg" alt="Instagram">
                 </a>
             </div>
         </div>
     </div>
 
     <!-- attach behaviour script -->
-    <script src="/scripts/cart-page-behavior.js"></script>
+    <script src="../scripts/cart-page-behavior.js"></script>
 </body>
 </html>

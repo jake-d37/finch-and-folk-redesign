@@ -1,8 +1,8 @@
 /*import all other style sheets to link them to the page*/
 @import url("colors.css");
 @import url("typography.css");
-@import url("layouts/layout.css");
 @import url("images.css");
+@import url("layouts/layout.css");
 @import url("components/components.css");
 
 * {
