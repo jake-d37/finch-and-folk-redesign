@@ -2,15 +2,8 @@
 @import url("colors.css");
 @import url("typography.css");
 @import url("layout.css");
-@import url('/styles/layouts/header.css');
-@import url('/styles/layouts/footer.css');
-@import url('/styles/layouts/landing-page-layout.css');
-@import url('/styles/layouts/results-page-layout.css');
-@import url('/styles/layouts/product-page-layout.css');
-@import url('/styles/layouts/cart-page-layout.css');
-@import url('/styles/layouts/payment-form-layout.css');
 @import url("images.css");
-@import url("/styles/components/components.css");
+@import url("styles/components/components.css");
 
 * {
     /*to allow for things to be moved back*/
