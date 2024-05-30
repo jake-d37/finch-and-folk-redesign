@@ -12,5 +12,4 @@
 - implement all the images
     - go back to results page and make sure webps are webps and not jpgs
     - check all alt tags
-- add checkbox to cart
 - publish site to github
