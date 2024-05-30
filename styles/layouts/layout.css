@@ -1,0 +1,17 @@
+@import url('header.css');
+@import url('footer.css');
+@import url('landing-page-layout.css');
+@import url('results-page-layout.css');
+@import url('product-page-layout.css');
+@import url('cart-page-layout.css');
+@import url('payment-form-layout.css');
+
+.grid-container {
+    display: grid;
+}
+
+.grid-item {
+    /*for testing*/
+    outline: 2px solid red;
+    outline: none;
+}
