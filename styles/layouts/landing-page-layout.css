@@ -75,6 +75,7 @@
 .hero-section > .display-image-container > .display-image {
     /*show vertically at top to align with heading and throwaway*/
     align-self: flex-start;
+    box-shadow: 0px 0.5em 1px rgba(0,0,0,0.05);
     /*sizing*/
     width: 70%;
     height: 90%;
@@ -85,6 +86,10 @@
     justify-content: space-between;
     /*one image is underneath the other*/
     flex-direction: column;
+}
+.hero-section > .throwaway-image-container > * {
+    /* add shadows to all the throwaway images */
+    box-shadow: 0px 0.5em 1px rgba(0,0,0,0.05);
 }
 .hero-section > .throwaway-image-container > .image-one {
     /*sizing*/

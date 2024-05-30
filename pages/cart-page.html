@@ -48,17 +48,18 @@
                 <!-- apply coupon -->
                 <a href="" class="invert-color">Apply Coupon</a>
                 <!-- send as gift checkbox -->
-                <label class="checkbox-container invert-color">Send as gift
+                <div class="checkbox-container">
                     <input type="checkbox">
                     <span class="checkmark"></span>
-                </label>
+                    <label class="invert-color">Send as gift</label>
+                </div>
             </div>
         </div>
         <!-- column 2 -->
         <div class="column column-middle">
             <!-- items count -->
-            <p id="item-count" class="item-count text-content invert-color">3 Items</p>
-            <p id="cart-total" class="cart-total text-content invert-color">$113.47</p>
+            <p id="item-count" class="item-count text-content invert-color">4 Items</p>
+            <p id="cart-total" class="cart-total text-content invert-color">$92.97</p>
             <!-- total price -->
         </div>
         <!-- column 3 -->
@@ -95,7 +96,11 @@
                 <div class="item-card" id="item-card-1">
                     <!-- image -->
                     <picture class="item-image">
-                        <img class="archway-image item-image" src="/images/product-images/crochet-bunny/image-1-high.jpg">
+                        <img 
+                            class="archway-image item-image"
+                            src="/images/product-images/crochet-bunny/image-1-low.jpg" 
+                            srcset="/images/product-images/crochet-bunny/image-1-low.jpg 2x, /images/product-images/crochet-bunny/image-1-low.jpg 1x" 
+                            alt="Crochet Bunny Item">
                     </picture>
                     <!-- product name -->
                     <p class="text-content product-column">Crochet Bunny</p>
@@ -115,17 +120,21 @@
                 <div class="item-card" id="item-card-2">
                     <!-- image -->
                     <picture class="item-image">
-                        <img class="archway-image item-image" src="/images/product-images/crochet-bunny/image-1-high.jpg">
+                        <img 
+                            class="archway-image item-image"
+                            src="/images/product-images/soft-block/image-low.jpg" 
+                            srcset="/images/product-images/soft-block/image-high.webp 2x, /images/product-images/soft-block/image-low.jpg 1x" 
+                            alt="Soft Blocks Item">
                     </picture>
                     <!-- product name -->
-                    <p class="text-content product-column">Crochet Bunny</p>
+                    <p class="text-content product-column">Soft Block Toy</p>
                     <!-- other -->
                     <div class="item-other">
                         <div class="horizontal">
                             <!-- quantity -->
-                            <p class="text-content quantity-column">1</p>
+                            <p class="text-content quantity-column">2</p>
                             <!-- price -->
-                            <p class="text-content price-column">$30.00</p>
+                            <p class="text-content price-column">$31.98</p>
                         </div>
                         <!-- remove button -->
                         <button class="btn" onclick="removeItemCard(2)">Remove</button>
@@ -135,24 +144,28 @@
                 <div class="item-card" id="item-card-3">
                     <!-- image -->
                     <picture class="item-image">
-                        <img class="archway-image item-image" src="/images/product-images/crochet-bunny/image-1-high.jpg">
+                        <img 
+                            class="archway-image item-image"
+                            src="/images/product-images/christmas-blocks/image-low.jpg" 
+                            srcset="/images/product-images/christmas-blocks/image-high.jpg 2x, /images/product-images/christmas-blocks/image-low.jpg 1x" 
+                            alt="Christmas Blocks Item">
                     </picture>
                     <!-- product name -->
-                    <p class="text-content product-column">Crochet Bunny</p>
+                    <p class="text-content product-column">Christmas Countdown Blocks</p>
                     <!-- other -->
                     <div class="item-other">
                         <div class="horizontal">
                             <!-- quantity -->
                             <p class="text-content quantity-column">1</p>
                             <!-- price -->
-                            <p class="text-content price-column">$30.00</p>
+                            <p class="text-content price-column">$30.99</p>
                         </div>
                         <!-- remove button -->
                         <button class="btn" onclick="removeItemCard(3)">Remove</button>
                     </div>
                 </div>
                 <!-- subtotal -->
-                <p class="text-content subtotal" id="subtotal">Subtotal:   $300.00</p>
+                <p class="text-content subtotal" id="subtotal">Subtotal: $92.97</p>
                 <!-- checkout button -->
                 <button class="btn checkout-button" onclick="openPaymentForm()">Checkout</button>
             </div>
@@ -165,7 +178,10 @@
                 <!-- product button 1 -->
                 <a class="btn recommended-product" href="/pages/product-page.html">
                     <picture class="recommended-image">
-                        <img src="/images/product-images/crochet-bunny/image-2-high.jpg">
+                        <img 
+                            src="/images/product-images/crochet-bunny/image-2-low.jpg" 
+                            srcset="/images/product-images/crochet-bunny/image-2-high 2x, /images/product-images/crochet-bunny/image-2-low.jpg 1x" 
+                            alt="Recommended Crochet Bunny">
                     </picture>
                     <div class="text-data">
                         <p class="text-content product-name">Crochet Bunny</p>
@@ -192,11 +208,14 @@
                 <!-- product button 2 -->
                 <a class="btn recommended-product" href="/pages/product-page.html">
                     <picture class="recommended-image">
-                        <img src="/images/product-images/crochet-bunny/image-2-high.jpg">
+                        <img 
+                            src="/images/product-images/animals-watercolor/image-low.jpg" 
+                            srcset="/images/product-images/animals-watercolor/image-high.jpg 2x, /images/product-images/animals-watercolor/image-low.jpg 1x" 
+                            alt="Recommended Aussie Animals Watercolour">
                     </picture>
                     <div class="text-data">
-                        <p class="text-content product-name">Crochet Bunny</p>
-                        <p class="text-content product-price">$30.00</p>
+                        <p class="text-content product-name">Aussie Animals Watercolour</p>
+                        <p class="text-content product-price">$45.99</p>
                         <div class="star-rating">
                             <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
                                 <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
@@ -204,6 +223,30 @@
                             <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
                                 <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
                             </svg>
+                            <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                                <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                            </svg>
+                            <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                                <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                            </svg>
+                            <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
+                                <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- product button 3 -->
+                <a class="btn recommended-product" href="/pages/product-page.html">
+                    <picture class="recommended-image">
+                        <img 
+                            src="/images/product-images/bear-bean/image-low.jpg" 
+                            srcset="/images/product-images/bear-bean/image-high.webp 2x, /images/product-images/bear-bean/image-low.jpg 1x" 
+                            alt="Recommended Bear Bean Toy">
+                    </picture>
+                    <div class="text-data">
+                        <p class="text-content product-name">Bear Bean Toy</p>
+                        <p class="text-content product-price">$30.00</p>
+                        <div class="star-rating">
                             <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
                                 <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
                             </svg>
@@ -213,29 +256,8 @@
                             <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
                                 <path d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
                             </svg>
-                        </div>
-                    </div>
-                </a>
-                <!-- product button 3 -->
-                <a class="btn recommended-product" href="/pages/product-page.html">
-                    <picture class="recommended-image">
-                        <img src="/images/product-images/crochet-bunny/image-2-high.jpg">
-                    </picture>
-                    <div class="text-data">
-                        <p class="text-content product-name">Crochet Bunny</p>
-                        <p class="text-content product-price">$30.00</p>
-                        <div class="star-rating">
                             <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
-                                <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
-                            </svg>
-                            <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
-                                <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
-                            </svg>
-                            <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
-                                <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
-                            </svg>
-                            <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
-                                <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                                <path d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
                             </svg>
                             <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
                                 <path d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
@@ -246,11 +268,14 @@
                 <!-- product button 4 -->
                 <a class="btn recommended-product" href="/pages/product-page.html">
                     <picture class="recommended-image">
-                        <img src="/images/product-images/crochet-bunny/image-2-high.jpg">
+                        <img 
+                            src="/images/product-images/soft-block/image-low.jpg" 
+                            srcset="/images/product-images/soft-block/image-high.webp 2x, /images/product-images/soft-block/image-low.jpg 1x" 
+                            alt="Recommended Soft Block Toy">
                     </picture>
                     <div class="text-data">
-                        <p class="text-content product-name">Crochet Bunny</p>
-                        <p class="text-content product-price">$30.00</p>
+                        <p class="text-content product-name">Soft Block Toy</p>
+                        <p class="text-content product-price">$30.99</p>
                         <div class="star-rating">
                             <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
                                 <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
@@ -262,7 +287,7 @@
                                 <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
                             </svg>
                             <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
-                                <path class="star-path" d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
+                                <path d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
                             </svg>
                             <svg width="50" height="53" viewBox="0 0 50 53" xmlns="http://www.w3.org/2000/svg" class="product-save-button">
                                 <path d="M33.0322 16.9446L31.0202 10.7521C29.1253 4.92024 20.8747 4.92021 18.9798 10.7521L16.9678 16.9446H10.4566C4.32464 16.9446 1.77503 24.7913 6.73595 28.3956L12.0036 32.2228L9.99152 38.4152C8.09663 44.2471 14.7715 49.0967 19.7324 45.4924L25 41.6653L30.2676 45.4924C35.2285 49.0967 41.9034 44.2472 40.0085 38.4152L37.9964 32.2228L43.264 28.3957C48.2249 24.7913 45.6754 16.9446 39.5434 16.9446H33.0322Z" class="product-save-path" stroke-width="6.66"/>
@@ -370,12 +395,12 @@
             </picture>
         </div>
         <div class="footer-options">
-            <p class="fine-print">2024 Finch & Folk | <a href="#" class="fine-print">Privacy Policy</a> | <a href="#" class="fine-print">Terms</a></p>
+            <p class="fine-print">2024 Finch & Folk | <a href="https://finchandfolk.com.au/policies/privacy-policy" target="_blank" class="fine-print">Privacy Policy</a> | <a href="https://finchandfolk.com.au/policies/terms-of-service" target="_blank" class="fine-print">Terms</a></p>
             <div class="socials">
-                <a href="#" class="btn icon-button">
+                <a href="https://www.facebook.com/finchandfolk" target="_blank" class="btn icon-button">
                     <img class="icon-image" src="/images/icons/facebook-icon.svg" alt="Facebook">
                 </a>
-                <a href="#" class="btn icon-button">
+                <a href="https://www.instagram.com/finchandfolk" target="_blank" class="btn icon-button">
                     <img class="icon-image" src="/images/icons/instagram-icon.svg" alt="Instagram">
                 </a>
             </div>

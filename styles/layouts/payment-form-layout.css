@@ -33,18 +33,14 @@
     display: none;
     flex-direction: column;
     /* visuals */
-    /* linear gradient bugging out, fix later */
-    background-color: linear-gradient(to bottom, #FFFFF0 20%, #FFF6C8 90%);
-    background-color: var(--color-primary-var-2);
+    background: var(--gradient-payment-form);
     border-radius: 2rem;
-
     /* positioning */
     position: absolute;
     top: calc(50% + 50px);
     left: 50%;
     z-index: 15; /*ensure its above the blur overlay*/
     transform: translate(-50%, -50%);
-
     /* sizing and spacing */
     width: 80%;
     max-width: 50rem;
@@ -204,7 +200,7 @@
     width: 1rem;
     height: 2rem;
     background-color: #ffdd00; /* Yellow */
-    animation: confetti-fall 10s linear infinite;
+    animation: confetti-fall 10s ease-out infinite;
 }
 
 @keyframes confetti-fall {

@@ -8,13 +8,9 @@
 - exit buttons added to payment form for easy reversal of actions
 - added confetti to payment confirmation for ux
 
-**REMINDERS**
+**TO DO**
 - implement all the images
-    - have different LODs of images in picture Tags
-- implement anchor links
-    - social media links
-- make sure the prices in the DOM match the defaults in JS
+    - go back to results page and make sure webps are webps and not jpgs
+    - check all alt tags
 - add checkbox to cart
-- gradient on payment form
-- if time, add animations to items list
-- if time, fix easing of animation in payment confirmation page
+- publish site to github

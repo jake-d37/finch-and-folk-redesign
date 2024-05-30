@@ -50,23 +50,39 @@
             <div class="grid-item image-options">
                 <button class="btn" onclick="changeMainImage(0)">
                     <picture class="image-option">
-                        <img class="image-option" src="/images/product-images/crochet-bunny/image-1-high.jpg">
+                        <img 
+                            class="image-option"
+                            src="/images/product-images/crochet-bunny/image-1-low.jpg" 
+                            srcset="/images/product-images/crochet-bunny/image-1-high.jpg 2x, /images/product-images/crochet-bunny/image-1-low.jpg 1x" 
+                            alt="Crochet Bunny Image 1">
                     </picture>
                 </button>
                 <button class="btn" onclick="changeMainImage(1)">
                     <picture class="image-option">
-                        <img class="image-option" src="/images/product-images/crochet-bunny/image-2-high.jpg">
+                        <img 
+                            class="image-option"
+                            src="/images/product-images/crochet-bunny/image-2-low.jpg" 
+                            srcset="/images/product-images/crochet-bunny/image-2-high.jpg 2x, /images/product-images/crochet-bunny/image-2-low.jpg 1x" 
+                            alt="Crochet Bunny Image 2">
                     </picture>
                 </button>
                 <button class="btn" onclick="changeMainImage(2)">
                     <picture class="image-option">
-                        <img class="image-option" src="/images/product-images/crochet-bunny/image-3-high.jpg">
+                        <img 
+                            class="image-option"
+                            src="/images/product-images/crochet-bunny/image-3-low.jpg" 
+                            srcset="/images/product-images/crochet-bunny/image-3-high.jpg 2x, /images/product-images/crochet-bunny/image-3-low.jpg 1x" 
+                            alt="Crochet Bunny Image 3">
                     </picture>
                 </button>
             </div>
             <div class="grid-item main-image">
                 <picture class="archway-image main-image" id="main-image">
-                    <img class="archway-image" src="/images/product-images/crochet-bunny/image-1-high.jpg">
+                    <!-- big image so low-res image versions didn't look nice -->
+                    <img 
+                        class="archway-image"
+                        src="/images/product-images/crochet-bunny/image-1-high.jpg" 
+                        alt="Crochet Bunny Main Image">
                 </picture>
             </div>
         </div>
@@ -133,12 +149,12 @@
             </picture>
         </div>
         <div class="footer-options">
-            <p class="fine-print">2024 Finch & Folk | <a href="#" class="fine-print">Privacy Policy</a> | <a href="#" class="fine-print">Terms</a></p>
+            <p class="fine-print">2024 Finch & Folk | <a href="https://finchandfolk.com.au/policies/privacy-policy" target="_blank" class="fine-print">Privacy Policy</a> | <a href="https://finchandfolk.com.au/policies/terms-of-service" target="_blank" class="fine-print">Terms</a></p>
             <div class="socials">
-                <a href="#" class="btn icon-button">
+                <a href="https://www.facebook.com/finchandfolk" target="_blank" class="btn icon-button">
                     <img class="icon-image" src="/images/icons/facebook-icon.svg" alt="Facebook">
                 </a>
-                <a href="#" class="btn icon-button">
+                <a href="https://www.instagram.com/finchandfolk" target="_blank" class="btn icon-button">
                     <img class="icon-image" src="/images/icons/instagram-icon.svg" alt="Instagram">
                 </a>
             </div>

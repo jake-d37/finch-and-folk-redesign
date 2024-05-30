@@ -3,17 +3,20 @@
 //since there is no backend, this is hardcoded in for now
 let items = [
     {
+        //crochet bunny
         index: 1,
         quantity: 1,
         price: 30
     }, {
+        //soft block toy
         index: 2,
         quantity: 2,
-        price: 30
+        price: 15.99
     }, {
+        //christmas countdown block
         index: 3,
         quantity: 1,
-        price: 30
+        price: 30.99
     }
 ]
 
