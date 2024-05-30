@@ -143,7 +143,7 @@
         /* Gradient overlay */
         var(--gradient-accent-one-to-transparent),
         /* Background image */
-        url("images/product-images/crochet-bunny/image-1-high.jpg");
+        url("../../images/product-images/crochet-bunny/image-1-high.jpg");
 
     background-size: cover;
 }
@@ -155,7 +155,7 @@
         /* Gradient overlay */
         var(--gradient-accent-two-to-transparent),
         /* Background image */
-        url("images/product-images/animals-watercolor/image-high.jpg");
+        url("../../images/product-images/animals-watercolor/image-high.jpg");
 
     background-size: cover;
 }
@@ -165,7 +165,7 @@
         /* Gradient overlay */
         var(--gradient-accent-two-to-transparent),
         /* Background image */
-        url("images/product-images/koala-cushion/image-high.jpg");
+        url("../../images/product-images/koala-cushion/image-high.jpg");
 
     background-size: cover;
 }
@@ -175,7 +175,7 @@
         /* Gradient overlay */
         var(--gradient-accent-one-to-transparent),
         /* Background image */
-        url("images/product-images/wooden-house-blocks/image-high.jpg");
+        url("../../images/product-images/wooden-house-blocks/image-high.jpg");
 
     background-size: cover;
 }

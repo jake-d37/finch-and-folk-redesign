@@ -146,7 +146,7 @@
     height: 0%; /*aniamtion will change this*/
     /* animation */
     opacity: 0;
-    animation: pull-up 0.4s ease-out forwards;
+    animation: pull-up 0.4s ease-in forwards;
 }
 /* animation for payment confirmation */
 @keyframes pull-up {

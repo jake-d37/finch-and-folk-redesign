@@ -107,15 +107,16 @@
 /* input is invisible and sits on top of check mark */
 .checkbox-container input[type="checkbox"] {
     opacity: 0;
-    margin-right: 10px;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
     /* ensure the input is above the checkmark */
     z-index: 2; 
 }
 /* style of check mark will change with the invisible input that the player is actually pressing */
 .checkbox-container .checkmark {
     position: absolute;
-    height: 20px;
-    width: 20px;
+    height: 2rem;
+    width: 2rem;
     border: 2px solid var(--color-text-light);
     border-radius: 3px;
     /* ensure the checkmark is below the input */

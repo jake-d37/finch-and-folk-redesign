@@ -54,7 +54,7 @@
     font-size: 1rem;
 
     /*icon*/
-    background-image: url('images/icons/search-icon.svg');
+    background-image: url('../../images/icons/search-icon.svg');
     background-color: var(--color-primary);
     background-size: 1rem;
     background-repeat: no-repeat;
