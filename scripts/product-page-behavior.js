@@ -20,9 +20,9 @@ function toggleDescriptionOn() {
 
 //handle image switching functionality
 const imageSources = [
-    ["/images/product-images/crochet-bunny/image-1-high.jpg"], 
-    ["/images/product-images/crochet-bunny/image-2-high.jpg"], 
-    ["/images/product-images/crochet-bunny/image-3-high.jpg"]
+    ["../images/product-images/crochet-bunny/image-1-high.jpg"], 
+    ["../images/product-images/crochet-bunny/image-2-high.jpg"], 
+    ["../images/product-images/crochet-bunny/image-3-high.jpg"]
 ];
 
 //change the main image to the one associated with the index given
